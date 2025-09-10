@@ -1,0 +1,188 @@
+/* ============================= */
+/*          ESTILOS GERAIS        */
+/* ============================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    background: #0b0c10 url("https://www.transparenttextures.com/patterns/black-felt.png");
+    color: #ddd;
+    min-height: 100vh;
+    cursor: none;
+    /* esconde cursor padrão, pois teremos cursor customizado */
+}
+
+/* ============================= */
+/*          CURSOR CUSTOMIZADO    */
+/* ============================= */
+#custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    background: url(/assets/sasas.png) no-repeat center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease, filter 0.3s ease;
+    z-index: 9999;
+}
+
+#custom-cursor.cursor-hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    filter: drop-shadow(0 0 8px #ff4f4f);
+}
+
+/* ============================= */
+/*              HEADER            */
+/* ============================= */
+header {
+    background: #0a0a0a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 79, 79, 0.2);
+    border-bottom: 1px solid #330000;
+}
+
+/* Logo principal - neon effect */
+header img.neon-img.logo {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header img.neon-img.logo:hover {
+    filter: drop-shadow(0 0 12px #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/*          GRUPO DE BOTÕES       */
+/* ============================= */
+.juncao-botao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Botão de Login */
+.juncao-botao button#btnLogin {
+    background: transparent;
+    border: 2px solid #ff4f4f;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #ff4f4f;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.juncao-botao button#btnLogin:hover {
+    background: #ff4f4f;
+    color: #fff;
+    box-shadow: 0 0 8px #ff4f4f;
+}
+
+.juncao-botao button#btnLogin a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botão ícone Hornet estilizado como link */
+.buton-hornet {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buton-hornet img.icon {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.buton-hornet:hover img.icon {
+    box-shadow: 0 0 16px #ff4f4f;
+    transform: scale(1.1);
+}
+
+/* ============ BANNER HORNET ============ */
+h1{
+      background: rgba(0, 0, 0, 0.3);
+      margin: 0px;
+}
+.banner1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 100px 80px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 79, 79, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.banner-img img:hover {
+  transform: scale(1.02);
+}
+
+.banner-texto {
+  max-width: 700px;
+  color: #f0f0f0;
+  font-size: 1.0rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.banner-texto .intro {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.banner-texto ul.descricao-missao {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.banner-texto ul.descricao-missao li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #ff4f4f;
+  text-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
+}
+
+
+/* ============================= */
+/*            ANIMAÇÕES           */
+/* ============================= */
+@keyframes neon-glow-bordo {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 6px #ff4f4f) drop-shadow(0 0 12px #b22222) drop-shadow(0 0 20px #8b0000);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #ff6b6b) drop-shadow(0 0 18px #dc143c) drop-shadow(0 0 25px #8b0000);
+    }
+}
