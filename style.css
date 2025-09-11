@@ -1,39 +1,34 @@
 /* ============================= */
-/*          ESTILOS GERAIS        */
+/*          ESTILOS GERAIS      */
 /* ============================= */
 body {
     margin: 0;
     padding: 0;
     font-family: "Segoe UI", "Arial", sans-serif;
-    background: #0b0c10 url("https://www.transparenttextures.com/patterns/black-felt.png");
     color: #ddd;
     min-height: 100vh;
     cursor: none;
-    /* esconde cursor padrão, pois teremos cursor customizado */
+    background: linear-gradient(120deg, #000000, #1a1a1a, #000000, #1a1a1a, #000000);
+    background-size: 800% 800%;
+    animation: gradientAnim 50s linear infinite alternate;
+}
+
+/* Cursor personalizado */
+body {
+    cursor: url("Hornet normal.cur"), auto;
+}
+
+a {
+    cursor: url("Hornet link.cur"), pointer;
+}
+
+input,
+textarea {
+    cursor: url("Hornet text.cur"), text;
 }
 
 /* ============================= */
-/*          CURSOR CUSTOMIZADO    */
-/* ============================= */
-#custom-cursor {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    pointer-events: none;
-    background: url(/assets/sasas.png) no-repeat center;
-    background-size: contain;
-    transform: translate(-50%, -50%);
-    transition: transform 0.2s ease, filter 0.3s ease;
-    z-index: 9999;
-}
-
-#custom-cursor.cursor-hover {
-    transform: translate(-50%, -50%) scale(1.5);
-    filter: drop-shadow(0 0 8px #ff4f4f);
-}
-
-/* ============================= */
-/*              HEADER            */
+/*          HEADER               */
 /* ============================= */
 header {
     background: #0a0a0a;
@@ -45,7 +40,6 @@ header {
     border-bottom: 1px solid #330000;
 }
 
-/* Logo principal - neon effect */
 header img.neon-img.logo {
     max-width: 200px;
     height: auto;
@@ -60,7 +54,137 @@ header img.neon-img.logo:hover {
 }
 
 /* ============================= */
-/*          GRUPO DE BOTÕES       */
+/*          NAVBAR               */
+/* ============================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    border: 1px solid #ff4f4f;
+    border-radius: 6px;
+    min-width: 160px;
+    list-style: none;
+    padding: 8px 0;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #ff4f4f22;
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ============================= */
+/*          BANNER               */
+/* ============================= */
+.banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+.banner-img img {
+    
+    max-width: 600px; /* Limita a largura máxima */
+    height: 400px; /* Mantém a proporção da altura */
+    max-height: 100%; /* Garante que a altura não ultrapasse o texto */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.banner-img img:hover {
+    transform: scale(1.02);
+}
+
+.banner-texto {
+    max-width: 700px;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.banner-texto p strong {
+    color: #e94560;
+    font-weight: bold;
+}
+
+.banner-texto .intro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.banner-texto ul.descricao-missao {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.banner-texto ul.descricao-missao li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #ff4f4f;
+    text-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
+}
+
+/* ============================= */
+/*          GRUPO DE BOTÕES      */
 /* ============================= */
 .juncao-botao {
     display: flex;
@@ -68,7 +192,6 @@ header img.neon-img.logo:hover {
     gap: 15px;
 }
 
-/* Botão de Login */
 .juncao-botao button#btnLogin {
     background: transparent;
     border: 2px solid #ff4f4f;
@@ -96,7 +219,6 @@ header img.neon-img.logo:hover {
     cursor: pointer;
 }
 
-/* Botão ícone Hornet estilizado como link */
 .buton-hornet {
     display: flex;
     background-color: transparent;
@@ -117,71 +239,41 @@ header img.neon-img.logo:hover {
     transform: scale(1.1);
 }
 
-/* ============ BANNER HORNET ============ */
-h1{
-      background: rgba(0, 0, 0, 0.3);
-      margin: 0px;
+/* ============================= */
+/*          ESTILIZAÇÃO H1       */
+/* ============================= */
+h1 {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    color: #e94560; /* Vermelho vibrante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
-.banner1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 100px 80px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.banner-img img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 79, 79, 0.5);
-  transition: transform 0.3s ease;
-}
-
-.banner-img img:hover {
-  transform: scale(1.02);
-}
-
-.banner-texto {
-  max-width: 700px;
-  color: #f0f0f0;
-  font-size: 1.0rem;
-  line-height: 1.7;
-  text-align: left;
-}
-
-.banner-texto .intro {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.banner-texto ul.descricao-missao {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
-}
-
-.banner-texto ul.descricao-missao li {
-  margin-bottom: 10px;
-  font-weight: 500;
-  color: #ff4f4f;
-  text-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
-}
-
 
 /* ============================= */
-/*            ANIMAÇÕES           */
+/*          ANIMAÇÕES            */
 /* ============================= */
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 @keyframes neon-glow-bordo {
-
     0%,
     100% {
         filter: drop-shadow(0 0 6px #ff4f4f) drop-shadow(0 0 12px #b22222) drop-shadow(0 0 20px #8b0000);
     }
-
     50% {
         filter: drop-shadow(0 0 10px #ff6b6b) drop-shadow(0 0 18px #dc143c) drop-shadow(0 0 25px #8b0000);
     }
