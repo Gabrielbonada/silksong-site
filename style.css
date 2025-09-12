@@ -431,3 +431,16 @@ canvas {
     filter: drop-shadow(0 0 4px #444);
   }
 }
+@keyframes glow2 {
+  0% {
+    filter: drop-shadow(0 0 4px #444);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #ff4f4f);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #444);
+  }
+}
