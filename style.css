@@ -311,10 +311,27 @@ h1 {
 /* ============================= */
 /*          Grafico              */
 /* ============================= */
+article {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
 
+canvas {
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #111;
+  width: 400px;   /* deve ser igual ao width do atributo do canvas */
+  height: 400px;  /* deve ser igual ao height do atributo do canvas */
+  display: block;
+}
+
+/* Se tiver algum .grafico no CSS, remova qualquer largura ou altura grande que tenha */
 .grafico {
-    width: 500px;
-    height: 500px;
+    max-width: 700px;
+    max-height: 500px;
+  /* remover width e height grandes */
 }
 
 /* ============================= */
@@ -322,52 +339,56 @@ h1 {
 /* ============================= */
 
 .agrupamento {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 80px;
-    padding: 80px 0;
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem; /* 80px -> 5rem */
+  padding: 5rem 0;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .card {
-    width: 200px;
-    height: 250px;
-    background: linear-gradient(145deg, #161616, #1f1f1f);
-    border: 2px solid #333;
-    border-radius: 16px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.9);
-    color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 10px;
-    cursor: grab;
-    position: relative;
-    background-image: url("https://i.imgur.com/k6dyW0v.png");
-    background-size: 60px;
-    background-repeat: no-repeat;
-    background-position: top 20px center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 12.5rem; /* 200px */
+  height: 15.625rem; /* 250px */
+  background: linear-gradient(145deg, #161616, #1f1f1f);
+  border: 2px solid #333;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.9);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.25rem 0.625rem;
+  cursor: pointer;
+  position: relative;
+  background-image: url("https://i.imgur.com/k6dyW0v.png");
+  background-size: 3.75rem;
+  background-repeat: no-repeat;
+  background-position: top 1.25rem center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: glow 4s infinite ease-in-out;
 }
 
-.card {
-    animation: glow 4s infinite ease-in-out;
+.card:hover,
+.card:focus {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1rem 2.5rem rgba(255, 255, 255, 0.3);
+  outline: none;
 }
-.desc{
-     font-size: 14px;
-  color: #aaa;              /* cor clara, mas não muito brilhante */
-  font-style: italic;       /* dá um toque diferenciado */
-  text-align: center;       /* centraliza o texto */
-  margin-top: 8px;          /* espaçamento para cima */
-  line-height: 1.4;         /* deixa a leitura mais confortável */
-  max-width: 180px;         /* limita a largura para não esticar demais */
-  user-select: none; 
+
+.desc {
+  font-size: 0.875rem;
+  color: #bbb;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  max-width: 11.25rem; /* 180px */
+  user-select: none;
 }
+
 
 /* ============================= */
 /*          ANIMAÇÕES            */
