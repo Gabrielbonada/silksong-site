@@ -12,14 +12,17 @@ body {
     background-size: 800% 800%;
     animation: gradientAnim 50s linear infinite alternate;
 }
+a{
+    text-decoration: none;
+}
 
 /* Cursor personalizado */
 body {
-    cursor: url("Hornet normal.cur"), auto;
+    cursor: url("/assets/Hornet-normal.ani"), auto
 }
 
 a {
-    cursor: url("Hornet link.cur"), pointer;
+    cursor: url("/assets/Hornet-alt.ani"), pointer;
 }
 
 input,
@@ -70,7 +73,7 @@ header img.neon-img.logo:hover {
     padding: 0;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
 }
 
@@ -134,14 +137,20 @@ header img.neon-img.logo:hover {
     padding: 60px 80px;
 }
 
+
 .banner-img img {
-    
-    max-width: 600px; /* Limita a largura máxima */
-    height: 400px; /* Mantém a proporção da altura */
-    max-height: 100%; /* Garante que a altura não ultrapasse o texto */
+
+    max-width: 600px;
+    /* Limita a largura máxima */
+    height: 400px;
+    /* Mantém a proporção da altura */
+    max-height: 100%;
+    /* Garante que a altura não ultrapasse o texto */
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+
 }
 
 .banner-img img:hover {
@@ -182,6 +191,38 @@ header img.neon-img.logo:hover {
     color: #ff4f4f;
     text-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
 }
+
+/* ============================= */
+/*          BANNER  2            */
+/* ============================= */
+
+.banner2 {
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+
+}
+
+.bannerimg2 img {
+    max-width: 600px;
+    height: auto;
+    /* para manter proporção */
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(34, 34, 34, 0.4));
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.bannerimg2 img:hover {
+    transform: scale(1.02);
+}
+
 
 /* ============================= */
 /*          GRUPO DE BOTÕES      */
@@ -234,10 +275,21 @@ header img.neon-img.logo:hover {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.buton-hornet:hover img.icon {
-    box-shadow: 0 0 16px #ff4f4f;
-    transform: scale(1.1);
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 16px 32px rgba(200, 200, 255, 0.15);
 }
+
+.imgperso {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+
+
 
 /* ============================= */
 /*          ESTILIZAÇÃO H1       */
@@ -245,13 +297,76 @@ header img.neon-img.logo:hover {
 h1 {
     font-family: "Georgia", serif;
     font-size: 2.5rem;
-    color: #e94560; /* Vermelho vibrante */
+    color: white;
+    /* Vermelho vibrante */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
     margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+}
+
+/* ============================= */
+/*          Grafico              */
+/* ============================= */
+
+.grafico {
+    width: 500px;
+    height: 500px;
+}
+
+/* ============================= */
+/*          Cards                */
+/* ============================= */
+
+.agrupamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 0;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(145deg, #161616, #1f1f1f);
+    border: 2px solid #333;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.9);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10px;
+    cursor: grab;
+    position: relative;
+    background-image: url("https://i.imgur.com/k6dyW0v.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: top 20px center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card {
+    animation: glow 4s infinite ease-in-out;
+}
+.desc{
+     font-size: 14px;
+  color: #aaa;              /* cor clara, mas não muito brilhante */
+  font-style: italic;       /* dá um toque diferenciado */
+  text-align: center;       /* centraliza o texto */
+  margin-top: 8px;          /* espaçamento para cima */
+  line-height: 1.4;         /* deixa a leitura mais confortável */
+  max-width: 180px;         /* limita a largura para não esticar demais */
+  user-select: none; 
 }
 
 /* ============================= */
@@ -261,20 +376,37 @@ h1 {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
 
 @keyframes neon-glow-bordo {
+
     0%,
     100% {
         filter: drop-shadow(0 0 6px #ff4f4f) drop-shadow(0 0 12px #b22222) drop-shadow(0 0 20px #8b0000);
     }
+
     50% {
         filter: drop-shadow(0 0 10px #ff6b6b) drop-shadow(0 0 18px #dc143c) drop-shadow(0 0 25px #8b0000);
     }
+}
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 4px #444);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 4px #444);
+  }
 }
