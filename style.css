@@ -275,19 +275,7 @@ header img.neon-img.logo:hover {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 16px 32px rgba(200, 200, 255, 0.15);
-}
 
-.imgperso {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    image-rendering: auto;
-}
 
 
 
@@ -316,6 +304,7 @@ article {
   justify-content: center;
   gap: 30px;
   padding: 20px 0;
+  filter: drop-shadow(0 0 6px #ff4f4f);
 }
 
 canvas {
@@ -387,6 +376,19 @@ canvas {
   line-height: 1.4;
   max-width: 11.25rem; /* 180px */
   user-select: none;
+}
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 16px 32px rgba(200, 200, 255, 0.15);
+}
+
+.imgperso {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;
 }
 
 
