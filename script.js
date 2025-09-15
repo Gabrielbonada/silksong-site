@@ -5,10 +5,14 @@ const ctx2 = document.getElementById('grafico').getContext('2d');
 const graficoVendas = new Chart(ctx1, {
   type: 'bar',
   data: {
-    labels: ['Jogo A', 'Jogo B', 'Jogo C', 'Jogo D', 'Jogo E'],
+    labels: ['Monster Hunter: Wilds',
+      'Assassin’s Creed Shadows',
+      'Hollow Knight: Silksong',
+      'EA Sports FC 25',
+      'Kingdom Come: Deliverance II'],
     datasets: [{
       label: 'Unidades Vendidas',
-      data: [20e6, 15e6, 5e6, 4e6, 3.5e6],
+      data: [10000000, 5000000, 5000000, 2000000, 2000000],
       backgroundColor: [
         '#4e79a7',
         '#f28e2b',
@@ -68,8 +72,8 @@ const graficocirculo = new Chart(ctx2, {
 });
 
 const npcs = [
-    {
-        name: Hornet,
+  {
+    name: Hornet,
 
-    }
+  }
 ]
