@@ -274,11 +274,6 @@ header img.neon-img.logo:hover {
     filter: drop-shadow(0 0 6px #ff4f4f);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-
-
-
-
-
 /* ============================= */
 /*          ESTILIZAÇÃO H1       */
 /* ============================= */
@@ -328,6 +323,15 @@ canvas {
 /* ============================= */
 
 .agrupamento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem; /* 80px -> 5rem */
+  padding: 5rem 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.agrupamento1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

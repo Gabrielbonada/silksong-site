@@ -1,0 +1,70 @@
+.mapas {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.mapas h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #700000;
+}
+
+.intro-mapas {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mapa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.mapa-card {
+  background: #121212;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #70000022;
+  transition: transform 0.3s ease;
+}
+
+.mapa-card:hover {
+  transform: scale(1.03);
+}
+
+.mapa-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.mapa-card h3 {
+  font-size: 1.4rem;
+  color: #ff7a7a;
+  margin-bottom: 10px;
+}
+
+.mapa-card p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.mapa-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  text-align: left;
+  color: #ccc;
+}
+
+.mapa-card ul li::before {
+  content: "🗺️ ";
+  margin-right: 6px;
+}
