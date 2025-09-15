@@ -12,13 +12,22 @@ Este é um site dedicado ao jogo **Hollow Knight: Silksong**, apresentando infor
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Bootstrap**
 - **AOS.js**
 
 ## Melhorias Futuras
 - Adicionar um sistema de busca.
 - Implementar um modo escuro.
-- Otimizar ainda mais o desempenho.
+- Utilizar APIS para deixar o site com mais funcionalidades
+
+## APIS implementadas com sucesso
+
+- Chart: Api que cria um grafico que demonstra os jogos mais vendidos em 2025 e a quantidade de players e cada plataforma
+- 
+
+## Ideias de implementação 
+- Steam Web API
+- Unsplash / Giphy API
+- Twitter/X API
 
 ## Como Contribuir
 1. Faça um fork deste repositório.
