@@ -1,0 +1,374 @@
+/* ============================= */
+/*          ESTILOS GERAIS      */
+/* ============================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    color: #ddd;
+    min-height: 100vh;
+    cursor: none;
+    background: linear-gradient(120deg, #000000, #1a1a1a, #000000, #1a1a1a, #000000);
+    background-size: 800% 800%;
+    animation: gradientAnim 50s linear infinite alternate;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cursor personalizado */
+body {
+    cursor: url("/assets/Hornet-normal.ani"), auto
+}
+
+a {
+    cursor: url("/assets/Hornet-alt.ani"), pointer;
+}
+
+input,
+textarea {
+    cursor: url("Hornet text.cur"), text;
+}
+
+/* ============================= */
+/*          HEADER               */
+/* ============================= */
+header {
+    background: #0a0a0a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 79, 79, 0.2);
+    border-bottom: 1px solid #330000;
+}
+
+header img.neon-img.logo {
+    max-width: 200px;
+    height: auto;
+     filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header img.neon-img.logo:hover {
+   filter: drop-shadow(0 0 12px #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/*          NAVBAR               */
+/* ============================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    border: 1px solid #ff4f4f;
+    border-radius: 6px;
+    min-width: 160px;
+    list-style: none;
+    padding: 8px 0;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #ff4f4f22;
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ============================= */
+/*          ESTILIZAÇÃO H1       */
+/* ============================= */
+h1 {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    color: white;
+    /* Vermelho vibrante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 20px;
+   filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+}
+
+/* ============================= */
+/*          GRUPO DE BOTÕES      */
+/* ============================= */
+.juncao-botao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.juncao-botao button#btnLogin {
+    background: transparent;
+    border: 2px solid #ff4f4f;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #ff4f4f;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.juncao-botao button#btnLogin:hover {
+     background: #ff4f4f;
+    color: #fff;
+    box-shadow: 0 0 8px #ff4f4f;
+}
+
+.juncao-botao button#btnLogin a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.buton-hornet {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buton-hornet img.icon {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ============================= */
+/*          BANNER               */
+/* ============================= */
+.banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+
+.banner-img img {
+
+    max-width: 600px;
+    /* Limita a largura máxima */
+    height: 400px;
+    /* Mantém a proporção da altura */
+    max-height: 100%;
+    /* Garante que a altura não ultrapasse o texto */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+     filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+
+}
+
+.banner-img img:hover {
+    transform: scale(1.02);
+}
+
+.banner-texto {
+    max-width: 700px;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.banner-texto p strong {
+    color: #e94560;
+    font-weight: bold;
+}
+
+.banner-texto .intro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.banner-texto ul.descricao-missao {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.banner-texto ul.descricao-missao li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #ff4f4f;
+    text-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
+}
+
+/* ============================= */
+/*          BANNER  2            */
+/* ============================= */
+
+.banner2 {
+    
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+
+}
+
+.bannerimg2 img {
+    max-width: 600px;
+    height: auto;
+    /* para manter proporção */
+
+    transition: transform 0.3s ease;
+}
+
+.bannerimg2 img:hover {
+    transform: scale(1.02);
+}
+
+/* ============================= */
+/*      CARD BANNER 2            */
+/* ============================= */
+.card-npc {
+    position: relative;
+    background: #111 url('/assets/fundo-card.jpg') center/cover no-repeat;
+    border: 2px solid rgba(255, 79, 79, 0.5);
+    filter: drop-shadow(0 0 8px rgba(255, 79, 79, 0.5)) 
+            drop-shadow(0 0 20px rgba(255, 79, 79, 0.5));
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    font-family: "Cinzel", serif; /* Fonte mais elegante */
+    box-shadow: inset 0 0 10px rgba(255, 79, 79, 0.5),
+                0 4px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Título */
+.card-npc h3 {
+    font-size: 1.5rem;
+    color: #e6ffe6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 0 0 6px rgba(255, 79, 79, 0.5);
+}
+
+/* Imagem */
+.card-npc img {
+    width: 140px;
+    margin: 15px auto;
+    display: block;
+
+}
+
+/* Texto de localização */
+.card-npc p {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: rgba(255, 79, 79, 0.5);
+    margin-top: 15px;
+}
+
+/* Cantos decorativos */
+.card-npc::before,
+.card-npc::after {
+    content: "✦";
+    position: absolute;
+    font-size: 1rem;
+    color: rgba(255, 79, 79, 0.5);
+}
+.card-npc::before {
+    top: 8px;
+    left: 12px;
+}
+.card-npc::after {
+    bottom: 8px;
+    right: 12px;
+}
+
+/* ============================= */
+/*      IFRAME                   */
+/* ============================= */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* limite para não ficar gigante */
+  margin: 40px auto;
+  aspect-ratio: 16/9; /* mantém proporção */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 79, 79, 0.5);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
