@@ -12,7 +12,8 @@ body {
     background-size: 800% 800%;
     animation: gradientAnim 50s linear infinite alternate;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -197,7 +198,7 @@ header img.neon-img.logo:hover {
 /* ============================= */
 
 .banner2 {
-    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -275,22 +276,6 @@ header img.neon-img.logo:hover {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 16px 32px rgba(200, 200, 255, 0.15);
-}
-
-.imgperso {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    image-rendering: auto;
-}
-
-
-
 /* ============================= */
 /*          ESTILIZAÇÃO H1       */
 /* ============================= */
@@ -312,26 +297,29 @@ h1 {
 /*          Grafico              */
 /* ============================= */
 article {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    filter: drop-shadow(0 0 6px #ff4f4f);
 }
 
 canvas {
-  border: 1px solid #555;
-  border-radius: 8px;
-  background: #111;
-  width: 400px;   /* deve ser igual ao width do atributo do canvas */
-  height: 400px;  /* deve ser igual ao height do atributo do canvas */
-  display: block;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #111;
+    width: 400px;
+    /* deve ser igual ao width do atributo do canvas */
+    height: 400px;
+    /* deve ser igual ao height do atributo do canvas */
+    display: block;
 }
 
 /* Se tiver algum .grafico no CSS, remova qualquer largura ou altura grande que tenha */
 .grafico {
     max-width: 700px;
     max-height: 500px;
-  /* remover width e height grandes */
+    /* remover width e height grandes */
 }
 
 /* ============================= */
@@ -339,54 +327,158 @@ canvas {
 /* ============================= */
 
 .agrupamento {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5rem; /* 80px -> 5rem */
-  padding: 5rem 0;
-  max-width: 80%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    /* 80px -> 5rem */
+    padding: 5rem 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.agrupamento1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    /* 80px -> 5rem */
+    padding: 5rem 0;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .card {
-  width: 12.5rem; /* 200px */
-  height: 15.625rem; /* 250px */
-  background: linear-gradient(145deg, #161616, #1f1f1f);
-  border: 2px solid #333;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.9);
-  color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1.25rem 0.625rem;
-  cursor: pointer;
-  position: relative;
-  background-image: url("https://i.imgur.com/k6dyW0v.png");
-  background-size: 3.75rem;
-  background-repeat: no-repeat;
-  background-position: top 1.25rem center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  animation: glow 4s infinite ease-in-out;
+    width: 12.5rem;
+    /* 200px */
+    height: 15.625rem;
+    /* 250px */
+    background: linear-gradient(145deg, #161616, #1f1f1f);
+    border: 2px solid #333;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.9);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.25rem 0.625rem;
+    cursor: pointer;
+    position: relative;
+    background-image: url("https://i.imgur.com/k6dyW0v.png");
+    background-size: 3.75rem;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: glow 4s infinite ease-in-out;
 }
 
 .card:hover,
 .card:focus {
-  transform: translateY(-0.5rem) scale(1.05);
-  box-shadow: 0 1rem 2.5rem rgba(255, 255, 255, 0.3);
-  outline: none;
+    transform: translateY(-0.5rem) scale(1.05);
+    box-shadow: 0 1rem 2.5rem rgba(255, 255, 255, 0.3);
+    outline: none;
 }
 
 .desc {
-  font-size: 0.875rem;
-  color: #bbb;
-  font-style: italic;
-  text-align: center;
-  margin-top: 0.5rem;
-  line-height: 1.4;
-  max-width: 11.25rem; /* 180px */
-  user-select: none;
+    font-size: 0.875rem;
+    color: #bbb;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    max-width: 11.25rem;
+    /* 180px */
+    user-select: none;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 16px 32px rgba(200, 200, 255, 0.15);
+}
+
+.imgperso {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+
+/* ============================= */
+/*          Footer               */
+/* ============================= */
+
+
+.hollow-footer {
+    background: linear-gradient(to top, #0b0c10, #14151c);
+    padding: 40px 20px;
+    text-align: center;
+    color: #aaa;
+    font-family: "Georgia", serif;
+    box-shadow: inset 0 0 20px #0008;
+    border-top: 1px solid #333;
+    animation: fadeIn 1s ease;
+}
+
+.hollow-footer .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.hollow-footer p {
+    font-size: 1em;
+    color: #bbb;
+    text-shadow: 0 0 6px #111;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons a img {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(1) brightness(0.8) drop-shadow(0 0 6px #7af2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2) drop-shadow(0 0 12px #7af);
+}
+
+.derrotada {
+    animation: fadeOut 0.4s ease forwards;
+    opacity: 0.3;
+    transform: scale(0.9);
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.footer-icons a svg path {
+    stroke: #aaa;
+    stroke-width: 1.5;
+    fill: transparent;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: stroke-dashoffset 0.8s ease-out, fill 0.4s ease-in;
+}
+
+.footer-icons a:hover svg path {
+    stroke-dashoffset: 0;
+    fill: #7af;
 }
 
 
@@ -418,29 +510,17 @@ canvas {
         filter: drop-shadow(0 0 10px #ff6b6b) drop-shadow(0 0 18px #dc143c) drop-shadow(0 0 25px #8b0000);
     }
 }
+
 @keyframes glow {
-  0% {
-    filter: drop-shadow(0 0 4px #444);
-  }
+    0% {
+        filter: drop-shadow(0 0 4px #444);
+    }
 
-  50% {
-    filter: drop-shadow(0 0 10px #fff);
-  }
+    50% {
+        filter: drop-shadow(0 0 10px #fff);
+    }
 
-  100% {
-    filter: drop-shadow(0 0 4px #444);
-  }
-}
-@keyframes glow2 {
-  0% {
-    filter: drop-shadow(0 0 4px #444);
-  }
-
-  50% {
-    filter: drop-shadow(0 0 10px #ff4f4f);
-  }
-
-  100% {
-    filter: drop-shadow(0 0 4px #444);
-  }
+    100% {
+        filter: drop-shadow(0 0 4px #444);
+    }
 }
