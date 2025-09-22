@@ -180,7 +180,7 @@ header img.neon-img.logo:hover {
 /* ============================= */
 /*          ESTILIZAÇÃO H1       */
 /* ============================= */
-h1 {
+h1,h2 {
     font-family: "Georgia", serif;
     font-size: 2.5rem;
     color: white;
@@ -209,7 +209,8 @@ h1 {
 
 
 .banner-img img {
-
+    width: 300px;
+    height: auto;
     animation: glowImg 6s ease-in-out infinite;
     border-radius: 12px;
     transition: transform 0.3s ease;
@@ -223,14 +224,16 @@ h1 {
 }
 
 .banner-texto {
-    max-width: 700px;
+    max-width: 1200px;
     color: #f0f0f0;
     font-size: 1.1rem;
     line-height: 1.8;
     text-align: justify;
     padding: 0px 20px;
     border-radius: 12px;
-
+    display: flex
+;
+    gap: 100px;
 }
 
 .banner-texto p strong {
@@ -240,6 +243,7 @@ h1 {
 
 .banner-texto .intro {
     font-size: 1.2rem;
+    text-align: justify;
     font-weight: 400;
 }
 
@@ -327,18 +331,19 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   gap: 30px; /* aumentei o espaçamento entre tabela e texto */
-  margin: 40px auto;
+  margin: 20px auto;
   max-width: 1200px;
   padding: 0 20px;
   color: #ddd;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
+
 .juncao h2 {
     width: 100%;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #ff4f4f;
     text-shadow: 0 0 6px #ff4f4f88;
     flex-basis: 100%;
 }
