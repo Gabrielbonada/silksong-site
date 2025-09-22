@@ -12,7 +12,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Itens.css" />
 </head>
 
 <body>
@@ -22,36 +22,36 @@
             <img class="neon-img logo" src="/assets/site/Site-logo.webp" alt="Logo do site Hollow Knight" />
         </div>
 
-        <div class="uniao-menu-pesquisa">    
+        <div class="uniao-menu-pesquisa">
             <nav class="navbar">
-            <ul class="menu">
-                <li><a href="Index.html">Início</a></li>
-                <li class="dropdown">
-                    <a href="#">NPCs</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Inimigos</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Outros ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Silks.html">Skils</a></li>
-                         <li><a href="Silks.html">Itens</a></li>
-                        <li><a href="">Ferramentas</a></li>
-                        <li><a href="mapas.html">Mapas</a></li>
-                    </ul>
+                <ul class="menu">
+                    <li><a href="Index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">NPCs</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Inimigos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Outros ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Silks.html">Skils</a></li>
+                            <li><a href="Silks.html">Itens</a></li>
+                            <li><a href="">Ferramentas</a></li>
+                            <li><a href="mapas.html">Mapas</a></li>
+                        </ul>
 
-                </li>
-            </ul>
-        </nav>
-         <div class="search-box">
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Pesquisar...">
             </div>
         </div>
-        
+
 
         <div class="juncao-botao">
-           
+
             <button id="btnLogin"><a href="#">Login</a></button>
             <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki" class="buton-hornet" target="_blank"
                 rel="noopener noreferrer" aria-label="Acesse a Wiki de Hollow Knight">
@@ -61,78 +61,183 @@
     </header>
 
     <main>
-        <h1>Hollow Knight: Silksong </h1>
-        <div class="results" id="results"></div>
-        <section class="banner1">
-            <div class="banner-img" data-aos="fade-right">
-                <img src="/assets/site/imagem1.webp" alt="Hornet em ação" />
+        <h1>Itens dentro do jogo</h1>
+        <div class="item-categories">
+            <div class="item-category">
+                <img src="/assets/cosumiveis/colar_de_rosario_pesado.png" alt="Todos os Itens">
+                <p>Todos os Itens</p>
             </div>
+            <div class="item-category" data-categoria="consumiveis">
+                <img src="/assets/cosumiveis/estatueta_da_vespa.png" alt="Consumíveis">
+                <p>Consumíveis</p>
+            </div>
+            <div class="item-category" data-categoria="chaves">
+                <img src="/assets/chaves/quill_hollow_knight_silksong_wiki_guide_75px.png" alt="Key Items">
+                <p>Key Items</p>
+            </div>
+            <div class="item-category" data-categoria="trocaveis">
+                <img src="/assets/trocaveis/twisted_bud_item_hollow_knight_silksong_wiki_guide_75px.png"
+                    alt="Itens Comerciais">
+                <p>Itens Comerciais</p>
+            </div>
+            <div class="item-category active" data-categoria="upgrade">
+                <img src="/assets/upgrade/craftmetal_item_hollow_knight_silksong_wiki_guide_128px.png"
+                    alt="Materiais de Upgrade">
+                <p>Upgrade Materials</p>
+            </div>
+            <div class="item-category" data-categoria="itens">
+                <img src="/assets/icons/housing_items.png" alt="Itens de Habitação">
+                <p>Housing Items</p>
+            </div>
+        </div>
 
-            <div class="banner-texto">
-                <p class="intro" data-aos="fade-left" data-aos-delay="0">
-                    Jogue como Hornet, a princesa protetora de Hallownest, e aventure-se por um reino totalmente novo
-                    governado pela seda e pela música! Capturada e trazida para este mundo desconhecido, Hornet deve
-                    lutar contra inimigos e desvendar mistérios enquanto ascende em uma peregrinação mortal ao topo do
-                    reino.
-                </p>
+        <section class="galeria-itens">
+            <div class="itens-galeria">
+                <!-- CONSUMÍVEIS -->
+                <div class="card-item" data-categoria="consumiveis">
+                    <a href="colar_de_rosarios.html">
+                        <img src="/assets/cosumiveis/colar_de_rosario.png" alt="Metal Artesanal">
+                        <p>Colar de Rosários</p>
+                    </a>
 
-                <p class="intro" data-aos="fade-left" data-aos-delay="200">
-                    Hollow Knight: Silksong é a sequência de Hollow Knight , com Hornet como personagem jogável.
-                    Desenvolvido pela Team Cherry para Windows, macOS e Linux, o jogo conta com uma portabilidade para
-                    Nintendo Switch e Nintendo Switch 2, uma portabilidade para Xbox One e Xbox Series X/S e uma
-                    portabilidade para PlayStation 4 e 5 pela Shark Jump. O jogo foi lançado em 4 de setembro de 2025.
-                </p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/colar_de_rosario_pesado.png" alt="Fragmento de Máscara">
+                    <p>Colar de Rosários Pesado</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/Comedor_de_seda.png" alt="Comedor de Seda">
+                    <p>Comedor de Seda</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/corda_de_rosarios_palido.png" alt="Corda de Rosários Pálido">
+                    <p>Corda de Rosários Pálido</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/estatueta_da_vespa.png" alt="Corda de Rosários Pálido">
+                    <p>Estatueta da Vespa</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/fragmento_da_besta.png" alt="Corda de Rosários Pálido">
+                    <p>Fragmento da Besta
+                    </p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/Nucleo_imaculado.png" alt="Corda de Rosários Pálido">
+                    <p>Nucleo Imaculado</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/Pacote_de_fragmentos.png" alt="Corda de Rosários Pálido">
+                    <p>Pacote de Fragmento</p>
+                </div>
+                <div class="card-item" data-categoria="consumiveis">
+                    <img src="/assets/cosumiveis/pedra_de_cultivo.png" alt="Corda de Rosários Pálido">
+                    <p>Pedra de Cultivo</p>
+                </div>
+                <!------------>
+                <!---Chaves--->
+                <!------------>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/quill_item_hollow_knight_silksong_wiki_guide_128px.png"
+                        alt="Kit de Artesanato">
+                    <p>Pena</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/map_and_quill_item_hollow_knight_silksong_wiki_guide_128px.png"
+                        alt="Kit de Artesanato">
+                    <p>Mapa e pena</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/manto_do_caçador1.png" alt="Kit de Artesanato">
+                    <p>Manto do caçador</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/bolsa-de-ferramentas.png" alt="Kit de Artesanato">
+                    <p>Bolsa de Ferramentas</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/bolsa-de-ferramentas-e-kit-de-artesanato.png" alt="Kit de Artesanato">
+                    <p>Bolsa de ferramenta e kit de artesão</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/everbloom.png" alt="Kit de Artesanato">
+                    <p>Everbloom</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-simples.png" alt="Kit de Artesanato">
+                    <p>Chave Simples</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-do-sino-de-mergulho.png" alt="Kit de Artesanato">
+                    <p>Chave do portão</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-branca.png" alt="Kit de Artesanato">
+                    <p>Chave Branca</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-do-cirurgiao.png" alt="Kit de Artesanato">
+                    <p>Chave do cirurgião</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-do-cirurgiao.png" alt="Kit de Artesanato">
+                    <p>Chave do arquiteto</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-de-bellhome.png" alt="Kit de Artesanato">
+                    <p>Chave de bellhome</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-de-mossland.png" alt="Kit de Artesanato">
+                    <p>Mapa mossland</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/peca-em-forma-de-coracao.png" alt="Kit de Artesanato">
+                    <p>Peça em forma de coração</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/coracao-de-engrenagem.png" alt="Kit de Artesanato">
+                    <p>Coração de engranagem</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/chave-do-apostata.png" alt="Kit de Artesanato">
+                    <p>Chave da apostata</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-da-medula.png" alt="Kit de Artesanato">
+                    <p>Mapa da Medula</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-docas-profundas.png" alt="Kit de Artesanato">
+                    <p>Mapa docas profundas</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-docas-profundas.png" alt="Kit de Artesanato">
+                    <p>Mapa far filds</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-de-greymoor.png" alt="Kit de Artesanato">
+                    <p>Mapa De Greymoor</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/Mapa-de-bellhart.png" alt="Kit de Artesanato">
+                    <p>Mapa De bellhart</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-de-shellwood.png" alt="Kit de Artesanato">
+                    <p>Mapa de sehllwood</p>
+                </div>
+                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-de-wormways.png" alt="Kit de Artesanato">
+                    <p>Mapa de wormways</p>
+                </div>
+                                <div class="card-item" data-categoria="chaves">
+                    <img src="/assets/chaves/mapa-marcha-do-caçador.png" alt="Kit de Artesanato">
+                    <p>Mapa da marcha do caçador  </p>
+                </div>
             </div>
         </section>
 
-        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
-
-        <section class="banner2">
-            <div class="banner-texto">
-                <p class="intro" data-aos="fade-down" data-aos-delay="0">Data de lançamento oficial: Hollow Knight:
-                    Silksong foi lançado oficialmente em 4 de setembro de
-                    2025, encerrando anos de espera da comunidade.</p>
-                <p class="intro" data-aos="fade-down" data-aos-delay="200">
-                    O lançamento de Silksong se tornou um marco na cena de jogos independentes. Superou franquias
-                    populares em número de jogadores simultâneos e está sendo considerado um forte candidato a “Jogo do
-                    Ano"</p>
-                <p class="intro" data-aos="fade-down" data-aos-delay="400">Em seus primeiros 30 minutos no Steam, o jogo
-                    atingiu mais de 110.000 jogadores simultâneos. Fazendo
-                    com que as plataformas como Steam, Nintendo eShop, PlayStation Store e outras ficaram instáveis ou
-                    travaram devido ao volume massivo de acessos.</p>
-
-
-            </div>
-            <div class="bannerimg2" data-aos="fade-up" data-aos-delay="0">
-                <img src="/assets/site/imagem2.webp" alt="">
-            </div>
-        </section>
-        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
-        <article>
-            <canvas data-aos="fade-down" data-aos-delay="0" class="grafico" id="meuGrafico" width="400"
-                height="400"></canvas>
-            <canvas data-aos="fade-down" data-aos-delay="200" class="grafico" id="grafico" width="400"
-                height="400"></canvas>
-        </article>
-        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
-        <!--           -->
-        <!--    NPCS   -->
-        <!--           -->
-        <section class="criaturas">
-            <h1> NPCS Dentro do jogo</h1>
-            <div class="agrupamento">
-
-            </div>
-        </section>
-        <!--           -->
-        <!--   Bosses  -->
-        <!--           -->
-        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
-        <section class="criaturas">
-            <h1> Chefões dentro do jogo</h1>
-            <div class="agrupamento1">
-            </div>
-        </section>
     </main>
     <footer class="hollow-footer">
         <div class="footer-content">
@@ -149,7 +254,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <script src="itens.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
