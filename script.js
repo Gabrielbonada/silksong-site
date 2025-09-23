@@ -14,9 +14,10 @@ const chefes = [
   { nome: "Mãe da ninhada", arquivo: "mae_da_ninhada.html", imagem: "/assets/Boss/mae_da_ninhada.png", descricao: "Matriarca louca da Laje raramente vista fora de seu labirinto. Dela são criados todos os carcereiros.", delay: 800 },
   { nome: "Grande mãe de seda", arquivo: "grande_mae_de_seda.html", imagem: "/assets/Boss/grande_mae.png", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 0 },
   { nome: "Besta do sino", arquivo: "besta_do_sino.html", imagem: "/assets/Boss/besta_do_sino.png", descricao: "Este aliou-se a mim, seja como agradecimento por sua salvação ou respeito por alguém julgado como igual.", delay: 200 },
-   { nome: "dançarinos mecanicos", arquivo: "dancarinos.html", imagem: "/assets/Boss/dancarinos.png", descricao: "Autômatos de construção impecável, dando as boas-vindas aos participantes em sua câmara ", delay: 400 },
-   { nome: "Pai dos craws", arquivo: "paicraw.html", imagem: "/assets/Boss/paicraw.png", descricao: "Senhor e justiça dos craws de Pharloom. Entrega a morte de insetos condenados com seu bico revestido de aço.", delay: 600 },
-   { nome: "Rei da Crosta Khann", arquivo: "reicrosta.html", imagem: "/assets/Boss/reicrosta.png", descricao: "Senhor guerreiro endurecido de uma época passada, capaz de comandar a crosta de coral a seu pedido.", delay: 800 },
+  { nome: "dançarinos mecanicos", arquivo: "dancarinos.html", imagem: "/assets/Boss/dancarinos.png", descricao: "Autômatos de construção impecável, dando as boas-vindas aos participantes em sua câmara ", delay: 400 },
+  { nome: "Pai dos craws", arquivo: "paicraw.html", imagem: "/assets/Boss/paicraw.png", descricao: "Senhor e justiça dos craws de Pharloom. Entrega a morte de insetos condenados com seu bico revestido de aço.", delay: 600 },
+
+  { nome: "Fantasma", arquivo: "fantasma.html", imagem: "/assets/Boss/fantasma.png", descricao: "Criatura triste, encarregada sozinha de expulsar o lixo sufocante da Cidadela.", delay: 800 },
 
 ];
 
@@ -48,7 +49,9 @@ const pages = [
   { name: "caveira tirana", file: "Caveira_Tirana.html" },
   { name: "irmã de lasca", file: "irma_de_lasca.html" },
   { name: "lace", file: "lace.html" },
-  { name: "mãe musgo", file: "Mae_musgo.html" }
+  { name: "mãe musgo", file: "Mae_musgo.html" },
+  { name: "mãe da ninhada", file: "mae_da_ninhada.html" },
+  { name: "Besta Alada", file: "Besta_voadora.html" },
 ];
 
 // =========================

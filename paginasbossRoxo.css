@@ -125,6 +125,40 @@ header img.neon-img.logo:hover {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/* ============================= */
+/*          PESQUISA             */
+/* ============================= */
+
+.search-box {
+            margin: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            border: none;
+        }
+        .results {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .results a {
+            display: block;
+            margin: 8px 0;
+            padding: 10px;
+            background: #222;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .results a:hover {
+            background: #444;
+        }
+.uniao-menu-pesquisa{
+    display: flex;
+}
 
 /* ============================= */
 /*          ESTILIZAÇÃO H1       */
@@ -231,7 +265,7 @@ h1 {
 }
 
 .banner-texto p strong {
-    color: #e94560;
+    color: #cc99ff;
     font-weight: bold;
 }
 

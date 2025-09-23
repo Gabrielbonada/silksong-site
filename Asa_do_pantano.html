@@ -19,39 +19,39 @@
 
     <header>
         <div>
-            <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp" alt="Logo do site Hollow Knight" /></a>
-            
+            <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp"
+                    alt="Logo do site Hollow Knight" /></a>
+
         </div>
 
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li class="dropdown">
-                    <a href="#">NPCs ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Hornet</a></li>
-                        <li><a href="#">Quirrel</a></li>
-                        <li><a href="#">Cloth</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Inimigos ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Vespas</a></li>
-                        <li><a href="#">Besouros</a></li>
-                        <li><a href="#">Chefes</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Skills ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Dash</a></li>
-                        <li><a href="#">Wall Jump</a></li>
-                        <li><a href="#">Needle Throw</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="uniao-menu-pesquisa">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="Index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">NPCs</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Inimigos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Outros ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Silks.html">Skils</a></li>
+                            <li><a href="Brasoes.html">Brasões</a></li>
+                            <li><a href="Itens.html">Itens</a></li>
+                            <li><a href="">Ferramentas</a></li>
+                            <li><a href="mapas.html">Mapas</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+            </div>
+        </div>
+
 
         <div class="juncao-botao">
             <button id="btnLogin"><a href="#">Login</a></button>
@@ -66,20 +66,21 @@
         <h1>Asa do Pântano</h1>
         <section class="banner1">
             <div class="banner-img" data-aos="fade-right">
-                <img src="/assets/Luta_boss/Ultimo_julgamento.webp" alt="Hornet em ação" />
+                <img src="/assets/Luta_boss/asa.png" alt="Hornet em ação" />
             </div>
 
             <div class="banner-texto">
                 <p class="intro" data-aos="fade-left" data-aos-delay="0">
-                    A Mãe Musgo é um chefe inicial em Silksong, localizado na Gruta do Musgo. Ela é uma criatura feita
-                    de musgo e plantas que se destaca por sua combinação de ataques agressivos e controle do espaço.
+                    Moorwing é uma criatura semelhante a uma mosca que tem dois olhos volumosos. Antes do seu encontro
+                    com Moorwing, você terá a opção de lutar contra ele junto com um NPC. Encontre o NPC perto de uma
+                    estrutura em forma de torre, fale com ele e derrote o monstro que está à espreita na área. Depois de
+                    derrotar o inimigo que está à espreita na área onde o NPC está localizado, o NPC se moverá para
+                    perto da localização de Moorwing e perguntará se você precisa de ajuda para lutar contra ele.
                 </p>
 
                 <p class="intro" data-aos="fade-left" data-aos-delay="200">
-                    Seus principais movimentos incluem mergulhos rápidos para atacar Hornet no ar, cabeçadas que fazem
-                    estalactites caírem, e a invocação de pequenos vermes que complicam o combate. A arena é marcada por
-                    elementos naturais que podem ser usados tanto contra o jogador quanto para planejar estratégias de
-                    ataque
+                    Seus principais movimentos incluem mergulhos rápidos para atacar Hornet no ar, ataques de ar
+                    cortantes e cortes com seus ferrões.
                 </p>
                 <p class="intro" data-aos="fade-left" data-aos-delay="400">
                     Para derrotá-la, é essencial manter-se em constante movimento, ler atentamente os sinais visuais que
@@ -92,23 +93,31 @@
 
         <section class="banner2">
             <div class="banner-texto">
-                <p class="intro" data-aos="fade-down" data-aos-delay="0"> <strong>Dificuldade:</strong> Considerada
-                    “tutorial boss” — serve para ensinar aos jogadores os primeiros padrões de ataque, movimento,
-                    timing, etc.Ela não é super resistente no início, mas em versões com dupla Moss Mother (na Weavenest) a saúde
-                    dela aumenta. </p>
+                <p class="intro" data-aos="fade-down" data-aos-delay="0"> <strong>Projéteis Circulares Mortais:</strong>
+                    Moorwing tentará atacar você com projéteis circulares que se movem muito rápido e podem causar
+                    bastante dano à sua saúde se não forem evitados. Este ataque pode ser facilmente evitado pulando no
+                    ar. Depois de evitar este ataque, tente se aproximar de Moorwing para poder acertá-lo várias vezes e
+                    causar algum dano à sua saúde.</p>
                 <p class="intro" data-aos="fade-down" data-aos-delay="200">
-                    Explorar o “pogo” (saltos usando ataque descendente) quando ela mergulha / desliza no chão para
-                    causar dano.</p>
-                <p class="intro" data-aos="fade-down" data-aos-delay="400">Derrotar Moss Mother desbloqueia passagem
-                    para novas áreas, como Bone Bottom. É obrigatório para progredir no mundo.Também há recompensas
-                    menores (como itens, progresso no mapa, possivelmente compêndio/journal
-                    “bosses defeated”).</p>
+                    <strong>Ataque corpo a corpo com arranhão:</strong>
+                    Moorwing tentará arranhá-lo com suas garras afiadas. Esse tipo de ataque causa uma boa quantidade de
+                    dano à sua saúde se você for atingido por ele. Você pode até explorar esse ataque, pois Moorwing o
+                    executará em um movimento descendente, deixando sua parte frontal vulnerável a ataques.
+                    Certifique-se de atacar a parte frontal dele enquanto ele executa o ataque, para que você possa
+                    causar uma boa quantidade de dano à sua saúde.
+                </p>
+                <p class="intro" data-aos="fade-down" data-aos-delay="400"><strong>Ataques de Projéteis:
+                    </strong>Moorwing usa outra abordagem para seu ataque de projéteis circulares, na qual ele usa os
+                    pés para criar esses projéteis. Esses projéteis vêm em dois e tentarão atingi-lo muito rapidamente,
+                    assim como no primeiro ataque de projétil. Para evitar sofrer dano com este ataque, certifique-se de
+                    maximizar o uso da sua habilidade de salto. Você também pode explorar este ataque esquivando-se e
+                    acertando Moorwing ao mesmo tempo, e infligir uma boa quantidade de dano à sua saúde.</p>
             </div>
             <div class="bannerimg2" data-aos="fade-up" data-aos-delay="0">
                 <div class="card-npc">
                     <h3>Ultimo Julgamento</h3>
                     <img src="/assets/Boss/Asa_do_pantano.png" alt="Hornet">
-                    <p>Location: Pharloom</p>
+                    <p>Location: Greymoor</p>
                 </div>
 
             </div>
@@ -116,7 +125,6 @@
         <section class="banner3">
             <div class="iframe-container" data-aos="fade-up" data-aos-delay="200">
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/xguU2Q9QejI"
-                https://www.youtube.com/watch?
                     title="Moss Mother Boss Fight - Hollow Knight: Silksong" frameborder="0" allowfullscreen>
                 </iframe>
             </div>

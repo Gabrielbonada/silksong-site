@@ -125,9 +125,7 @@ header img.neon-img.logo:hover {
     display: block;
 }
 
-.uniao-menu-pesquisa{
-    display: flex;
-}
+
 /* ============================= */
 /*          PESQUISA             */
 /* ============================= */
@@ -159,7 +157,9 @@ header img.neon-img.logo:hover {
         .results a:hover {
             background: #444;
         }
-
+.uniao-menu-pesquisa{
+    display: flex;
+}
 /* ============================= */
 /*          BANNER               */
 /* ============================= */
