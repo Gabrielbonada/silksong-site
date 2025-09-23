@@ -8,11 +8,16 @@ const chefes = [
   { nome: "Carmellita", arquivo: "Carmellita.html", imagem: "/assets/Boss/Carmellita.webp", descricao: "Rainha teatral e feroz, ataca com saltos precisos e lâminas giratórias em meio a uma plateia vibrante.", delay: 600 },
   { nome: "Caveira Tirana", arquivo: "Caveira_Tirana.html", imagem: "/assets/Boss/Caveira_tirana.png", descricao: "Tirano esquelético implacável, golpeia com ataques pesados e domina o campo de batalha com força bruta.", delay: 800 },
   { nome: "Irmã de lasca", arquivo: "irma_de_lasca.html", imagem: "/assets/Boss/Irma_de_lasca.png", descricao: "Uma raiz com tentáculos, flutua em combate e utiliza ataques rápidos e saltos acentuados.", delay: 0 },
-  { nome: "Asa do Pântano", arquivo: "Asa_do_pantano.html", imagem: "/assets/Boss/Asa_do_pantano.png", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 200 },
-  { nome: "Besta Voadora", arquivo: "Besta_voadora.html", imagem: "/assets/Boss/Besta_voadora.png", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 400 },
-  { nome: "Garmond and Zaza", arquivo: "garmondezaza.html", imagem: "/assets/Ballow.webp", descricao: "Protetora ágil e destemida de Hallownest, mestre na lança e guardiã dos segredos do reino.", delay: 600 },
-  { nome: "Shakra", arquivo: "Shakra.html", imagem: "/assets/Boss/Church_Keeper.webp", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 800 },
-  { nome: "Grande mãe de seda", arquivo: "grande_mae_de_seda.html", imagem: "/assets/Boss/grande_mae.png", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 0 }
+  { nome: "Asa do Pântano", arquivo: "Asa_do_pantano.html", imagem: "/assets/Boss/Asa_do_pantano.png", descricao: "asa do pantano espreitou as torres de Greymoor, banqueteando-se com os peregrinos.", delay: 200 },
+  { nome: "Besta Voadora", arquivo: "Besta_voadora.html", imagem: "/assets/Boss/Besta_voadora.png", descricao: "irritada com um corpo pesado e máscara rígida espessa.", delay: 400 },
+  { nome: "Comedor de sinos", arquivo: "comedor_De_sino.html", imagem: "/assets/Boss/comedor_de_sino.png", descricao: "Centopéia há muito adormecida, acordada e enfurecida pelo colapso em ruínas de Pharloom. ", delay: 600 },
+  { nome: "Mãe da ninhada", arquivo: "mae_da_ninhada.html", imagem: "/assets/Boss/mae_da_ninhada.png", descricao: "Matriarca louca da Laje raramente vista fora de seu labirinto. Dela são criados todos os carcereiros.", delay: 800 },
+  { nome: "Grande mãe de seda", arquivo: "grande_mae_de_seda.html", imagem: "/assets/Boss/grande_mae.png", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 0 },
+  { nome: "Besta do sino", arquivo: "besta_do_sino.html", imagem: "/assets/Boss/besta_do_sino.png", descricao: "Este aliou-se a mim, seja como agradecimento por sua salvação ou respeito por alguém julgado como igual.", delay: 200 },
+   { nome: "dançarinos mecanicos", arquivo: "dancarinos.html", imagem: "/assets/Boss/dancarinos.png", descricao: "Autômatos de construção impecável, dando as boas-vindas aos participantes em sua câmara ", delay: 400 },
+   { nome: "Pai dos craws", arquivo: "paicraw.html", imagem: "/assets/Boss/paicraw.png", descricao: "Senhor e justiça dos craws de Pharloom. Entrega a morte de insetos condenados com seu bico revestido de aço.", delay: 600 },
+   { nome: "Rei da Crosta Khann", arquivo: "reicrosta.html", imagem: "/assets/Boss/reicrosta.png", descricao: "Senhor guerreiro endurecido de uma época passada, capaz de comandar a crosta de coral a seu pedido.", delay: 800 },
+
 ];
 
 const Npc = [
@@ -148,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         datasets: [{
           label: 'Unidades Vendidas',
           data: [10_000_000, 5_000_000, 5_000_000, 2_000_000, 2_000_000],
-          backgroundColor: ['#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f'],
+          backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'],
           borderRadius: 5
         }]
       },
@@ -164,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
     new Chart(ctx2, {
       type: 'pie',
       data: {
-        labels: ['Jogo A','Jogo B','Jogo C','Jogo D','Jogo E'],
-        datasets: [{ label: 'Unidades Vendidas', data: [20_000_000,15_000_000,5_000_000,4_000_000,3_500_000], backgroundColor: ['#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f'], borderWidth: 1 }]
+        labels: ['Jogo A', 'Jogo B', 'Jogo C', 'Jogo D', 'Jogo E'],
+        datasets: [{ label: 'Unidades Vendidas', data: [20_000_000, 15_000_000, 5_000_000, 4_000_000, 3_500_000], backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'], borderWidth: 1 }]
       },
       options: { responsive: true, plugins: { legend: { display: true, position: 'right' }, title: { display: true, text: 'Distribuição de Vendas' } } }
     });
