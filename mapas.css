@@ -1,6 +1,7 @@
 /* ============================= */
 /*          ESTILOS MAPAS     */
 /* ============================= */
+
 .mapas {
   padding: 40px 20px;
   color: #f0f0f0;
@@ -161,7 +162,6 @@ body {
     cursor: none;
     background: linear-gradient(120deg, #000000, #1a1a1a, #000000, #1a1a1a, #000000);
     background-size: 800% 800%;
-    animation: gradientAnim 50s linear infinite alternate;
 }
 
 a {
@@ -392,4 +392,12 @@ h2 {
     100% {
         filter: drop-shadow(0 0 4px #444);
     }
+}
+.ato-title {
+  grid-column: 1 / -1; /* Faz o título ocupar toda a largura do grid */
+  font-size: 1.8rem;
+  color: #ff7a7a;
+  text-align: center;
+  margin: 40px 0 20px;
+  text-shadow: 0 0 6px #700000;
 }
