@@ -407,5 +407,121 @@ h2 {
     margin: 40px 0 20px;
     text-shadow: 0 0 6px #700000;
     animation: glow 4s infinite ease-in-out;
-
 }
+.ato-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #70000022;
+    transition: transform 0.3s ease;
+    animation: glow 4s infinite ease-in-out;
+}
+.ato-card:hover {
+    transform: scale(1.03);
+}
+.ato-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+} 
+.ato-card h3 {
+    font-size: 1.4rem;
+    color: #ff7a7a;
+    margin-bottom: 10px;
+}
+.ato-card p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.ato-card ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    text-align: left;
+    color: #ccc;
+}
+.ato-card ul li::before {
+    content: "⚔️ ";
+    margin-right: 6px;
+}
+/* ============================= */
+/*          RODAPÉ               */
+/* ============================= */
+footer {
+    background: #0a0a0a;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 40px;
+    border-top: 1px solid #330000;
+    box-shadow: 0 -4px 15px rgba(255, 79, 79, 0.2);
+    margin-top: 40px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #ff4f4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ff6b6b;
+    text-shadow: 0 0 5px #ff6b6b;
+}
+@media (max-width: 768px) {
+    .mapa-grid {
+        gap: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .juncao-botao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .mapa-grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 400px) {
+    header img.neon-img.logo {
+        max-width: 150px;
+    }
+
+    .buton-hornet img.icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .juncao-botao button#btnLogin {
+        padding: 6px 14px;
+        font-size: 0.9rem;
+    }
+}
+/* ============================= */
+/*          FIM DO ARQUIVO      */  
+/* ============================= */
