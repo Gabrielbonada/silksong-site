@@ -3,137 +3,138 @@
 /* ============================= */
 
 .mapas {
-  padding: 40px 20px;
-  color: #f0f0f0;
-  text-align: center;
+    padding: 40px 20px;
+    color: #f0f0f0;
+    text-align: center;
 }
 
 .mapas h2 {
-  font-size: 2.2rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  text-shadow: 0 0 8px #700000;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #700000;
 }
 
 .intro-mapas {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .mapa-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 150px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .mapa-card {
-  background: #121212;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #70000022;
-  transition: transform 0.3s ease;
-  animation: glow 4s infinite ease-in-out;
+    background: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #70000022;
+    transition: transform 0.3s ease;
+    animation: glow 4s infinite ease-in-out;
 }
 
 .mapa-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .mapa-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .mapa-card h3 {
-  font-size: 1.4rem;
-  color: #ff7a7a;
-  margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #ff7a7a;
+    margin-bottom: 10px;
 }
 
 .mapa-card p {
-  font-size: 1rem;
-  text-align: justify;
-  margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 .mapa-card ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 0.95rem;
-  text-align: left;
-  color: #ccc;
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    text-align: left;
+    color: #ccc;
 }
 
 .mapa-card ul li::before {
-  content: "🗺️ ";
-  margin-right: 6px;
+    content: "🗺️ ";
+    margin-right: 6px;
 }
+
 /*          ESTILOS cards     */
 /* Fundo da aba de mapas */
 .map-section {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  padding: 40px;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Título com efeito glow */
 .map-section h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-  margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 30px;
 }
 
 /* Cards de mapa */
 .map-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover nos cards */
 .map-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
 }
 
 /* Texto dentro dos cards */
 .map-card p {
-  font-size: 1.1rem;
-  color: #e0f7fa;
-  text-shadow: 0 0 5px #00ffff;
+    font-size: 1.1rem;
+    color: #e0f7fa;
+    text-shadow: 0 0 5px #00ffff;
 }
 
 /* Botões ou links */
 .map-card a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #00ffff;
-  color: #000;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 10px #00ffff;
-  transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00ffff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffff;
+    transition: background 0.3s ease;
 }
 
 .map-card a:hover {
-  background: #00e6e6;
+    background: #00e6e6;
 }
 
 @keyframes glow {
@@ -344,9 +345,10 @@ h2 {
     margin-bottom: 20px;
     filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
 }
+
 .intro-mapas {
-  color: white;
-  /* Vermelho vibrante */
+    color: white;
+    /* Vermelho vibrante */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -355,6 +357,7 @@ h2 {
     margin-bottom: 20px;
     filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
 }
+
 @keyframes gradientAnim {
     0% {
         background-position: 0% 50%;
@@ -368,6 +371,7 @@ h2 {
         background-position: 0% 50%;
     }
 }
+
 @keyframes neon-glow-bordo {
 
     0%,
@@ -393,11 +397,15 @@ h2 {
         filter: drop-shadow(0 0 4px #444);
     }
 }
+
 .ato-title {
-  grid-column: 1 / -1; /* Faz o título ocupar toda a largura do grid */
-  font-size: 1.8rem;
-  color: #ff7a7a;
-  text-align: center;
-  margin: 40px 0 20px;
-  text-shadow: 0 0 6px #700000;
+    grid-column: 1 / -1;
+    /* Faz o título ocupar toda a largura do grid */
+    font-size: 1.8rem;
+    color: #ff7a7a;
+    text-align: center;
+    margin: 40px 0 20px;
+    text-shadow: 0 0 6px #700000;
+    animation: glow 4s infinite ease-in-out;
+
 }
