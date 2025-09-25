@@ -45,7 +45,8 @@ const pages = [
   { name: "brasão do xamã", file: "brasaoxama.html" },
   { name: "asa do pântano", file: "Asa_do_pantano.html" },
   { name: "besta alada", file: "Besta_voadora.html" },
-  { name: "carmellita", file: "Carmellita.html" },
+  { name: "carmellita", file:"Carmellita.html" },
+  { name: "comedor de sinos", file:"comedor_de_sino.html" },
   { name: "caveira tirana", file: "Caveira_Tirana.html" },
   { name: "irmã de lasca", file: "irma_de_lasca.html" },
   { name: "lace", file: "lace.html" },
@@ -109,7 +110,7 @@ if (searchInput) {
       const resultsDiv = document.getElementById("results");
       if (resultsDiv) resultsDiv.innerHTML = "";
 
-      if (query.length < 2) return;
+      if (query.length < 3) return;
 
       const found = pages.find(p => normalize(p.name) === query) || pages.find(p => normalize(p.name).includes(query));
 
@@ -120,7 +121,7 @@ if (searchInput) {
         p.textContent = "Nenhum resultado encontrado...";
         resultsDiv.appendChild(p);
       }
-    }, 500);
+    }, 1300);
   });
 }
 
