@@ -5,7 +5,7 @@ const chefes = [
   { nome: "Mãe Musgo", arquivo: "Mae_musgo.html", imagem: "/assets/Boss/Mae_musgo.webp", descricao: "Criatura selvagem e ancestral coberta de musgo, ataca com investidas brutais e invocações da floresta.", delay: 0 },
   { nome: "Lace", arquivo: "lace.html", imagem: "/assets/Boss/Lace.webp", descricao: "Espadachim elegante e rival ágil de Hornet, mestre em estocadas rápidas, contagens e fintas", delay: 200 },
   { nome: "Ultimo julgamento", arquivo: "Ultimo_julgamento.html", imagem: "/assets/Boss/Ultimo_julgamento.webp", descricao: "Guardiã flamejante do Portão da Cidadela, mestre em ataques com sino e chamas.", delay: 400 },
-  { nome: "Carmellita", arquivo: "Carmellita.html", imagem: "/assets/Boss/Carmellita.webp", descricao: "Rainha teatral e feroz, ataca com saltos precisos e lâminas giratórias em meio a uma plateia vibrante.", delay: 600 },
+  { nome: "Karmellita", arquivo: "Carmellita.html", imagem: "/assets/Boss/Carmellita.webp", descricao: "Rainha teatral e feroz, ataca com saltos precisos e lâminas giratórias em meio a uma plateia vibrante.", delay: 600 },
   { nome: "Caveira Tirana", arquivo: "Caveira_Tirana.html", imagem: "/assets/Boss/Caveira_tirana.png", descricao: "Tirano esquelético implacável, golpeia com ataques pesados e domina o campo de batalha com força bruta.", delay: 800 },
   { nome: "Irmã de lasca", arquivo: "irma_de_lasca.html", imagem: "/assets/Boss/Irma_de_lasca.png", descricao: "Uma raiz com tentáculos, flutua em combate e utiliza ataques rápidos e saltos acentuados.", delay: 0 },
   { nome: "Asa do Pântano", arquivo: "Asa_do_pantano.html", imagem: "/assets/Boss/Asa_do_pantano.png", descricao: "asa do pantano espreitou as torres de Greymoor, banqueteando-se com os peregrinos.", delay: 200 },
@@ -36,6 +36,9 @@ const Npc = [
 
 const pages = [
   { name: "mapa", file: "mapas.html" },
+  { name: "Itens", file: "Itens.html" },
+  { name: "Ferramentas", file: "ferramentas.html" },
+  { name: "Habilidade e silks", file: "Silks.html" },
   { name: "brasões", file: "Brasoes.html" },
   { name: "brasão do ceifador", file: "Brasaoceifador.html" },
   { name: "brasão do andarilho", file: "brasaoandarilho.html" },
@@ -43,17 +46,35 @@ const pages = [
   { name: "brasão da besta", file: "brasaodabesta.html" },
   { name: "brasão da bruxa", file: "brasaodabruxa.html" },
   { name: "brasão do xamã", file: "brasaoxama.html" },
-  { name: "asa do pântano", file: "Asa_do_pantano.html" },
-  { name: "besta alada", file: "Besta_voadora.html" },
-  { name: "carmellita", file:"Carmellita.html" },
-  { name: "comedor de sinos", file:"comedor_de_sino.html" },
+  //Boss
+  { name: "mãe musgo", file: "Mae_musgo.html" },
+  { name: "lace", file: "lace.html" },
+  { name: "Ultima juiza", file: "Ultimo_julgamento.html" },
+  { name: "Karmellita", file: "Carmellita.html" },
   { name: "caveira tirana", file: "Caveira_Tirana.html" },
   { name: "irmã de lasca", file: "irma_de_lasca.html" },
-  { name: "lace", file: "lace.html" },
-  { name: "mãe musgo", file: "Mae_musgo.html" },
+  { name: "asa do pântano", file: "Asa_do_pantano.html" },
+  { name: "besta alada", file: "Besta_voadora.html" },
+  { name: "comedor de sinos", file: "comedor_de_sino.html" },
   { name: "mãe da ninhada", file: "mae_da_ninhada.html" },
   { name: "Besta Alada", file: "Besta_voadora.html" },
-    { name: "Hornet", file: "Hornet.html" },
+  { name: "lace", file: "lace.html" },
+  { name: "Besta dos sinos", file: "besta_do_sino.html" },
+  { name: "Dançarinos mecanicos", file: "dancarinos.html" },
+  { name: "Paicraw", file: "paicraw.html" },
+
+  //Npcs
+  { name: "Ballow", file: "ballow.html" },
+  { name: "Caçador", file: "Caçador.html" },
+  { name: "Donzela da capela", file: "Capela_maid.html" },
+  { name: "caravana das pulgas", file: "caravana.html" },
+  { name: "Filha da forja", file: "Filhadaforja.html" },
+  { name: "Garmond e zaza", file: "garmondezaza.html" },
+  { name: "Grindle", file: "Grindle.html" },
+  { name: "Hornet", file: "Hornet.html" },
+  { name: "Shakra", file: "Shakra.html" },
+  { name: "Sherma", file: "Sherma.html" },
+
 ];
 
 // =========================
@@ -97,8 +118,9 @@ function criarCards(lista, seletor) {
   });
 }
 
+
 // =========================
-// PESQUISA COM DEBOUNCE
+// PESQUISA COM DEBOUNCE + LOADER
 // =========================
 const searchInput = document.getElementById("searchInput");
 let debounceTimer;
@@ -106,14 +128,26 @@ let debounceTimer;
 if (searchInput) {
   searchInput.addEventListener("input", () => {
     clearTimeout(debounceTimer);
+
+    const query = normalize(searchInput.value.trim());
+    const resultsDiv = document.getElementById("results");
+    if (resultsDiv) resultsDiv.innerHTML = "";
+
+    // Só mostra o loader se tiver pelo menos 3 caracteres
+    if (query.length >= 3 && resultsDiv) {
+      const loader = document.createElement("div");
+      loader.classList.add("loader");
+      loader.id = "loadingMsg";
+      resultsDiv.appendChild(loader);
+    }
+
     debounceTimer = setTimeout(() => {
-      const query = normalize(searchInput.value.trim());
-      const resultsDiv = document.getElementById("results");
       if (resultsDiv) resultsDiv.innerHTML = "";
 
       if (query.length < 3) return;
 
-      const found = pages.find(p => normalize(p.name) === query) || pages.find(p => normalize(p.name).includes(query));
+      const found = pages.find(p => normalize(p.name) === query) || 
+                    pages.find(p => normalize(p.name).includes(query));
 
       if (found) {
         window.location.href = found.file;
@@ -122,9 +156,10 @@ if (searchInput) {
         p.textContent = "Nenhum resultado encontrado...";
         resultsDiv.appendChild(p);
       }
-    }, 1300);
+    }, 1000);
   });
 }
+
 
 // =========================
 // LIMPAR PESQUISA AO VOLTAR
@@ -147,37 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================
   // GRÁFICOS
   // =========================
-  const ctx1 = document.getElementById('meuGrafico')?.getContext('2d');
-  const ctx2 = document.getElementById('grafico')?.getContext('2d');
-
-  if (ctx1) {
-    new Chart(ctx1, {
-      type: 'bar',
-      data: {
-        labels: ['Monster Hunter: Wilds', 'Assassin’s Creed Shadows', 'Hollow Knight: Silksong', 'EA Sports FC 25', 'Kingdom Come: Deliverance II'],
-        datasets: [{
-          label: 'Unidades Vendidas',
-          data: [10_000_000, 5_000_000, 5_000_000, 2_000_000, 2_000_000],
-          backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'],
-          borderRadius: 5
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: true }, title: { display: true, text: 'Vendas de 5 Jogos' } },
-        scales: { x: { beginAtZero: true } }
-      }
-    });
+  
   }
+);
 
-  if (ctx2) {
-    new Chart(ctx2, {
-      type: 'pie',
-      data: {
-        labels: ['Jogo A', 'Jogo B', 'Jogo C', 'Jogo D', 'Jogo E'],
-        datasets: [{ label: 'Unidades Vendidas', data: [20_000_000, 15_000_000, 5_000_000, 4_000_000, 3_500_000], backgroundColor: ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'], borderWidth: 1 }]
-      },
-      options: { responsive: true, plugins: { legend: { display: true, position: 'right' }, title: { display: true, text: 'Distribuição de Vendas' } } }
-    });
-  }
-});
