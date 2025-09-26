@@ -769,7 +769,7 @@ canvas {
         font-size: 1.5em;
         margin-bottom: 50px;
     }
-    @media(max-width:400px) {
+    @media(max-width:500px) {
     input {
         width: 115px;
     }
