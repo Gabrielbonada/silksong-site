@@ -739,7 +739,7 @@ canvas {
 
 @media(max-width:600px) {
     input {
-        width: 200px;
+        width: 170px;
     }
 
     .loader {
