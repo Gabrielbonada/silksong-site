@@ -176,48 +176,61 @@ header img.neon-img.logo:hover {
     filter: drop-shadow(0 0 6px #ff4f4f);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 /* ============================= */
 /*          PESQUISA             */
 /* ============================= */
 
 .search-box {
-            margin: 20px;
-            text-align: center;
-        }
-        input {
-            padding: 10px;
-            width: 300px;
-            border-radius: 8px;
-            border: none;
-        }
-        .results {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .results a {
-            display: block;
-            margin: 8px 0;
-            padding: 10px;
-            background: #222;
-            border-radius: 8px;
-            color: #fff;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .results a:hover {
-            background: #444;
-        }
-.uniao-menu-pesquisa{
+    margin: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.results a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    background: #222;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.results a:hover {
+    background: #444;
+}
+
+.uniao-menu-pesquisa {
     display: flex;
 }
+
 .timeline a {
-    display: block; /* Faz o link ocupar o espaço como um bloco */
-    text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Mantém a cor normal */
+    display: block;
+    /* Faz o link ocupar o espaço como um bloco */
+    text-decoration: none;
+    /* Remove sublinhado */
+    color: inherit;
+    /* Mantém a cor normal */
 }
+
 .timeline a .timeline-content {
-    width: 100%;  /* ocupa mesmo tamanho que os outros */
-    max-width: 280px; /* mesmo limite dos outros */
+    width: 100%;
+    /* ocupa mesmo tamanho que os outros */
+    max-width: 280px;
+    /* mesmo limite dos outros */
 }
 
 /* ============================= */
@@ -452,21 +465,28 @@ h1 {
 
     letter-spacing: 2px;
 }
+
 .imgeconteudo {
     display: flex;
     align-items: center;
-    gap: 30px; /* espaço entre imagem e tabela */
+    gap: 30px;
+    /* espaço entre imagem e tabela */
 }
+
 .brasao-img {
-    width: 200px; /* controla o tamanho fixo do brasão */
-    height: auto; /* mantém proporção */
+    width: 200px;
+    /* controla o tamanho fixo do brasão */
+    height: auto;
+    /* mantém proporção */
     border-radius: 12px;
 }
 
 .slot-icon {
-    width: 24px;  /* tamanho menor para ícones na tabela */
+    width: 24px;
+    /* tamanho menor para ícones na tabela */
     height: 24px;
-    object-fit: contain; /* garante que não estique */
+    object-fit: contain;
+    /* garante que não estique */
 }
 
 .tabela-slots {
@@ -592,6 +612,7 @@ h1 {
         filter: drop-shadow(0 0 4px #ff2e2e) drop-shadow(0 0 10px #330000) drop-shadow(0 0 15px #ff5555);
     }
 }
+
 .hamburguer {
     display: none;
     font-size: 2rem;
@@ -752,8 +773,9 @@ h1 {
         font-size: 1.2rem;
         font-weight: 100;
     }
+
     .banner1,
-    .banner2{
+    .banner2 {
         padding: 10px 30px;
     }
 
@@ -766,4 +788,12 @@ h1 {
         font-size: 1.5em;
         margin-bottom: 50px;
     }
+
+    @media(max-width:400px) {
+        input {
+            width: 115px;
+        }
+
+    }
+
 }
