@@ -9,59 +9,55 @@
 </head>
 
 <body>
-  <header>
-<!-- ======================= -->
-<!-- Navbar -->
-    <nav class="navbar">
-      <ul class="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Mapas</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <!-- outros links -->
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-<!-- ======================= -->
+     <header>
+        <div>
+            <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp"
+                    alt="Logo do site Hollow Knight" /></a>
+        </div>
+
+       <button id="hamburguer-btn" class="hamburguer">
+            ☰
+        </button>
+
+        <div class="uniao-menu-pesquisa">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="Index.html">Início</a></li>
+                    <li id="linke" class="dropdown">
+                        <a href="#">NPCs</a>
+                    </li>
+                    <li id="linka" class="dropdown">
+                        <a href="#">Inimigos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Outros ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Silks.html">Skils</a></li>
+                            <li><a href="Brasoes.html">Brasões</a></li>
+                            <li><a href="Itens.html">Itens</a></li>
+                            <li><a href="">Ferramentas</a></li>
+                            <li><a href="mapas.html">Mapas</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+            </div>
+        </div>
 
 
-    <div>
-      <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp"
-          alt="Logo do site Hollow Knight" /></a>
-    </div>
 
-    <nav class="navbar">
-      <ul class="menu">
-        <li><a href="Index.html">Início</a></li>
-        <li class="dropdown">
-          <a href="#">NPCs</a>
-        </li>
-        <li class="dropdown">
-          <a href="#">Inimigos</a>
-        </li>
-        <li class="dropdown">
-          <a href="#">Outros ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="Silks.html">Skils</a></li>
-            <li><a href="">Ferramentas</a></li>
-            <li><a href="mapas.html">Mapas</a></li>
-          </ul>
+        <div class="juncao-botao">
+            <button id="btnLogin"><a href="#">Login</a></button>
+            <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki" class="buton-hornet" target="_blank"
+                rel="noopener noreferrer" aria-label="Acesse a Wiki de Hollow Knight">
+                <img class="neon-img icon" src="/assets/site/icon.png" alt="Ícone Hornet" />
+            </a>
+        </div>
+    </header>
 
-        </li>
-      </ul>
-    </nav>
-
-    <div class="juncao-botao">
-      <button id="btnLogin"><a href="#">Login</a></button>
-      <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki" class="buton-hornet" target="_blank"
-        rel="noopener noreferrer" aria-label="Acesse a Wiki de Hollow Knight">
-        <img class="neon-img icon" src="/assets/site/icon.png" alt="Ícone Hornet" />
-      </a>
-    </div>
-  </header>
 
 
   <section class="mapas">

@@ -24,14 +24,18 @@
                     alt="Logo do site Hollow Knight" /></a>
         </div>
 
-           <div class="uniao-menu-pesquisa">
+        <button id="hamburguer-btn" class="hamburguer">
+            ☰
+        </button>
+
+        <div class="uniao-menu-pesquisa">
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="Index.html">Início</a></li>
-                    <li class="dropdown">
+                    <li id="linke" class="dropdown">
                         <a href="#">NPCs</a>
                     </li>
-                    <li class="dropdown">
+                    <li id="linka" class="dropdown">
                         <a href="#">Inimigos</a>
                     </li>
                     <li class="dropdown">
@@ -90,7 +94,7 @@
             </div>
         </section>
 
-        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png"
+        <img id="linha" width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
             alt="Caravana das Pulgas em destaque">
 
         <section class="banner2">
@@ -136,7 +140,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
-     <script src="pesquisa.js"></script>
+    <script src="pesquisa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
