@@ -29,7 +29,7 @@ const Npc = [
   { nome: "Garmond e zaza", arquivo: "garmondezaza.html", imagem: "/assets/Npc/Garmond_e_zaza.webp", descricao: "Garmond fala demais, enquanto Zaza carrega e protege o parceiro silenciosamente.", delay: 800 },
   { nome: "Ballow", arquivo: "Ballow.html", imagem: "/assets/Npc/Ballow.webp", descricao: "Assistente da Filha da Forja. Trabalha alimentando carvão no maquinário da filha da forja.", delay: 0 },
   { nome: "Caravana", arquivo: "caranava.html", imagem: "/assets/Npc/Caravana.webp", descricao: "Guia experiente que ajuda Hornet, oferecendo dicas valiosas para explorar cada canto do reino.", delay: 200 },
-  { nome: "Guardião da Igreja", arquivo: "Guardiao_da_igreja.html", imagem: "/assets/Npc/Guardiao_da_igreja.webp", descricao: "Sua presença intimidadora reflete a devoção e o rigor da fé local.", delay: 400 },
+  { nome: "Guardião da Igreja", arquivo: "Capela_maid.html", imagem: "/assets/Npc/Guardiao_da_igreja.webp", descricao: "Sua presença intimidadora reflete a devoção e o rigor da fé local.", delay: 400 },
   { nome: "Caçadora", arquivo: "Caçador.html", imagem: "/assets/Npc/Huntress.webp", descricao: "Caçadora ágil e letal, mestre em rastrear suas presas, tornando-a uma adversária formidável.", delay: 600 },
   { nome: "Sherma", arquivo: "Sherma.html", imagem: "/assets/Npc/Sherma.webp", descricao: "Sherma é um NPC alegre que canta em fontes termais e ajuda Hornet em Silksong.", delay: 800 }
 ];
@@ -53,6 +53,7 @@ const pages = [
   { name: "mãe musgo", file: "Mae_musgo.html" },
   { name: "mãe da ninhada", file: "mae_da_ninhada.html" },
   { name: "Besta Alada", file: "Besta_voadora.html" },
+    { name: "Hornet", file: "Hornet.html" },
 ];
 
 // =========================

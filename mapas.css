@@ -1,70 +1,527 @@
+/* ============================= */
+/*          ESTILOS MAPAS     */
+/* ============================= */
+
 .mapas {
-  padding: 40px 20px;
-  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
-  color: #f0f0f0;
-  text-align: center;
+    padding: 40px 20px;
+    color: #f0f0f0;
+    text-align: center;
 }
 
 .mapas h2 {
-  font-size: 2.2rem;
-  color: #ff4f4f;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  text-shadow: 0 0 8px #700000;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #700000;
 }
 
 .intro-mapas {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .mapa-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .mapa-card {
-  background: #121212;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #70000022;
-  transition: transform 0.3s ease;
+    background: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #70000022;
+    transition: transform 0.3s ease;
+    animation: glow 4s infinite ease-in-out;
 }
 
 .mapa-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .mapa-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .mapa-card h3 {
-  font-size: 1.4rem;
-  color: #ff7a7a;
-  margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #ff7a7a;
+    margin-bottom: 10px;
 }
 
 .mapa-card p {
-  font-size: 1rem;
-  text-align: justify;
-  margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 .mapa-card ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 0.95rem;
-  text-align: left;
-  color: #ccc;
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    text-align: left;
+    color: #ccc;
 }
 
 .mapa-card ul li::before {
-  content: "🗺️ ";
-  margin-right: 6px;
+    content: "🗺️ ";
+    margin-right: 6px;
 }
+
+/*          ESTILOS cards     */
+/* Fundo da aba de mapas */
+.map-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Título com efeito glow */
+.map-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 30px;
+}
+
+/* Cards de mapa */
+.map-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover nos cards */
+.map-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Texto dentro dos cards */
+.map-card p {
+    font-size: 1.1rem;
+    color: #e0f7fa;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* Botões ou links */
+.map-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00ffff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffff;
+    transition: background 0.3s ease;
+}
+
+.map-card a:hover {
+    background: #00e6e6;
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 4px #444);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #fff);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 4px #444);
+    }
+}
+
+/* ============================= */
+/*          ESTILOS GERAIS      */
+/* ============================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    color: #ddd;
+    min-height: 100vh;
+    cursor: none;
+    background: linear-gradient(120deg, #000000, #1a1a1a, #000000, #1a1a1a, #000000);
+    background-size: 800% 800%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cursor personalizado */
+body {
+    cursor: url("/assets/Hornet-normal.ani"), auto
+}
+
+a {
+    cursor: url("/assets/Hornet-alt.ani"), pointer;
+}
+
+input,
+textarea {
+    cursor: url("Hornet text.cur"), text;
+}
+
+/* ============================= */
+/*          HEADER               */
+/* ============================= */
+header {
+    background: #0a0a0a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 79, 79, 0.2);
+    border-bottom: 1px solid #330000;
+}
+
+header img.neon-img.logo {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+header img.neon-img.logo:hover {
+    filter: drop-shadow(0 0 12px #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/*          NAVBAR               */
+/* ============================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111;
+    border: 1px solid #ff4f4f;
+    border-radius: 6px;
+    min-width: 160px;
+    list-style: none;
+    padding: 8px 0;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #ff4f4f22;
+    color: #ff4f4f;
+    text-shadow: 0 0 5px #ff4f4f;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ============================= */
+/*          GRUPO DE BOTÕES      */
+/* ============================= */
+.juncao-botao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.juncao-botao button#btnLogin {
+    background: transparent;
+    border: 2px solid #ff4f4f;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #ff4f4f;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.juncao-botao button#btnLogin:hover {
+    background: #ff4f4f;
+    color: #fff;
+    box-shadow: 0 0 8px #ff4f4f;
+}
+
+.juncao-botao button#btnLogin a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buton-hornet {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buton-hornet img.icon {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 0 6px #ff4f4f);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ============================= */
+/*          ESTILIZAÇÃO H1       */
+/* ============================= */
+h2 {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    color: white;
+    /* Vermelho vibrante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+}
+
+.intro-mapas {
+    color: white;
+    /* Vermelho vibrante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(139, 0, 0, 0.3));
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes neon-glow-bordo {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 6px #ff4f4f) drop-shadow(0 0 12px #b22222) drop-shadow(0 0 20px #8b0000);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #ff6b6b) drop-shadow(0 0 18px #dc143c) drop-shadow(0 0 25px #8b0000);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 4px #444);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #fff);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 4px #444);
+    }
+}
+
+.ato-title {
+    grid-column: 1 / -1;
+    /* Faz o título ocupar toda a largura do grid */
+    font-size: 1.8rem;
+    color: #ff7a7a;
+    text-align: center;
+    margin: 40px 0 20px;
+    text-shadow: 0 0 6px #700000;
+    animation: glow 4s infinite ease-in-out;
+}
+.ato-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #70000022;
+    transition: transform 0.3s ease;
+    animation: glow 4s infinite ease-in-out;
+}
+.ato-card:hover {
+    transform: scale(1.03);
+}
+.ato-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+} 
+.ato-card h3 {
+    font-size: 1.4rem;
+    color: #ff7a7a;
+    margin-bottom: 10px;
+}
+.ato-card p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.ato-card ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    text-align: left;
+    color: #ccc;
+}
+.ato-card ul li::before {
+    content: "⚔️ ";
+    margin-right: 6px;
+}
+/* ============================= */
+/*          RODAPÉ               */
+/* ============================= */
+footer {
+    background: #0a0a0a;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 40px;
+    border-top: 1px solid #330000;
+    box-shadow: 0 -4px 15px rgba(255, 79, 79, 0.2);
+    margin-top: 40px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #ff4f4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ff6b6b;
+    text-shadow: 0 0 5px #ff6b6b;
+}
+@media (max-width: 768px) {
+    .mapa-grid {
+        gap: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .juncao-botao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .mapa-grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 400px) {
+    header img.neon-img.logo {
+        max-width: 150px;
+    }
+
+    .buton-hornet img.icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .juncao-botao button#btnLogin {
+        padding: 6px 14px;
+        font-size: 0.9rem;
+    }
+}
+/* ============================= */
+/*          FIM DO ARQUIVO      */  
+/* ============================= */
