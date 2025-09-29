@@ -38,6 +38,7 @@ if (ctx2) {
 }
 
 // ================== GNEWS ==================
+//const gnewsURL = "/.netlify/functions/gnews";
 const API_KEY = "d15637dbd5a95f5b7f45f2ffea77ee4b";
 const query = "Hollow Knight Silksong";
 const gnewsURL = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=pt&max=6&apikey=${API_KEY}`;
