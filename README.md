@@ -18,7 +18,7 @@ Além de atender à comunidade de fãs, o projeto também visa demonstrar compet
 - **Design responsivo**: Compatível com dispositivos móveis.
 - **Links úteis**: Acesse a Wiki oficial do jogo.
 - **uma pagina para cada boss**: Informações sobre o jogo por completo.
-- - **Sistema de busca **: um filtro para cada pagina.
+- **Sistema de busca **: um filtro para cada pagina.
 
 ##  Tecnologias Utilizadas
 
