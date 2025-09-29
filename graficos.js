@@ -28,7 +28,7 @@ if (ctx2) {
       labels: ['Steam', 'Xbox', 'Playstation', 'Nintendo Switch'],
       datasets: [{
         label: 'Unidades Vendidas',
-        data: [3_200_000, 100_000_0, 500_000, 500_000], // valores corretos
+        data: [3_200_000, 1_000_000, 500_000, 500_000], // corrigido!
         backgroundColor: ['#4e79a7', '#59a14f', '#76b7b2', '#e15759'],
         borderWidth: 1
       }]
@@ -37,35 +37,37 @@ if (ctx2) {
   });
 }
 
+// ================== GNEWS ==================
 const API_KEY = "d15637dbd5a95f5b7f45f2ffea77ee4b";
 const query = "Hollow Knight Silksong";
-const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=pt&max=6&apikey=${API_KEY}`;
+const gnewsURL = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=pt&max=6&apikey=${API_KEY}`;
+const gnewsProxy = `https://api.allorigins.win/get?url=${encodeURIComponent(gnewsURL)}`;
 
-
-fetch(url)
+fetch(gnewsProxy)
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("gnews-container");
+    const parsed = JSON.parse(data.contents);
 
-    if (!data.articles || data.articles.length === 0) {
+    if (!parsed.articles || parsed.articles.length === 0) {
       container.innerHTML = "<p class='text-center'>Nenhuma notícia encontrada no momento.</p>";
       return;
     }
 
-    data.articles.forEach(article => {
+    parsed.articles.forEach(article => {
       const card = document.createElement("div");
       card.className = "col-md-4";
 
       card.innerHTML = `
-          <div class="card h-100 shadow-sm">
-            <img src="${article.image || 'https://via.placeholder.com/300x150'}" class="card-img-top" alt="Imagem da notícia">
-            <div class="card-body">
-              <h5 class="card-title">${article.title}</h5>
-              <p class="card-text">${article.description || ''}</p>
-              <a href="${article.url}" class="btn btn-primary" target="_blank">Ler mais</a>
-            </div>
+        <div class="card h-100 shadow-sm">
+          <img src="${article.image || 'https://via.placeholder.com/300x150'}" class="card-img-top" alt="Imagem da notícia">
+          <div class="card-body">
+            <h5 class="card-title">${article.title}</h5>
+            <p class="card-text">${article.description || ''}</p>
+            <a href="${article.url}" class="btn btn-primary" target="_blank">Ler mais</a>
           </div>
-        `;
+        </div>
+      `;
 
       container.appendChild(card);
     });
@@ -74,22 +76,25 @@ fetch(url)
     console.error("Erro ao buscar notícias da GNews:", error);
     document.getElementById("gnews-container").innerHTML = "<p class='text-danger text-center'>Erro ao carregar notícias.</p>";
   });
+
+// ================== RAWG ==================
 const API_KEY1 = "8b4ee1907db54d529ea5bb22c0ae5b5f";
 const gameName = "Hollow Knight: Silksong";
 const rawgURL = `https://api.rawg.io/api/games?search=${encodeURIComponent(gameName)}&page_size=5&key=${API_KEY1}`;
+const rawgProxy = `https://api.allorigins.win/get?url=${encodeURIComponent(rawgURL)}`;
 
-
-fetch(rawgURL)
+fetch(rawgProxy)
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("game-details");
+    const parsed = JSON.parse(data.contents);
 
-    if (!data.results || data.results.length === 0) {
+    if (!parsed.results || parsed.results.length === 0) {
       container.innerHTML = "<p class='text-center'>Jogo não encontrado na base de dados RAWG.</p>";
       return;
     }
 
-    const game = data.results[0];
+    const game = parsed.results[0];
     container.innerHTML = `
       <img src="${game.background_image}" alt="${game.name}" class="card-img-top" />
       <div class="card-body">
@@ -105,6 +110,3 @@ fetch(rawgURL)
     console.error("Erro ao buscar dados do RAWG:", error);
     document.getElementById("game-details").innerHTML = "<p class='text-danger text-center'>Erro ao carregar informações do jogo.</p>";
   });
-
-
-
