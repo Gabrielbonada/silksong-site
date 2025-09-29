@@ -20,13 +20,15 @@ Além de atender à comunidade de fãs, o projeto também visa demonstrar compet
 - **uma pagina para cada boss**: Informações sobre o jogo por completo.
 - - **Sistema de busca **: um filtro para cada pagina.
 
-## Tecnologias Utilizadas
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **AOS.js**
+##  Tecnologias Utilizadas
 
+| Tecnologia | Uso no Projeto |
+|------------|-----------------|
+| **HTML5** | Estruturação das páginas |
+| **CSS3** | Estilização, layout responsivo |
+| **JavaScript** | Interatividade e lógica do menu |
 
+---
 ## APIS implementadas com sucesso
 
 1. Chart.js
@@ -69,6 +71,24 @@ Para atrair fãs de jogos parecidos com recomendações.
 - Steam Web API
 - Unsplash / Giphy API
 - Twitter/X API
+
+
+### Casos de Teste
+
+| ID | Título | Pré-condições | Passos | Resultado Esperado |
+|----|-------|----------------|-------|---------------------|
+| **CT-001** | Carregamento da página inicial | Navegador aberto | Acessar `https://silksongwiki.netlify.app/` | Página abre sem erro e o título da aba contém “Silksong”. |
+| **CT-002** | Exibir menu principal | Página inicial carregada | Localizar itens `Início`, `NPCs`, `Inimigos`, `Outros`. | Todos os itens de menu estão visíveis e clicáveis. |
+| **CT-003** | Navegar para NPCs | Página inicial carregada | Clicar no menu **NPCs**. | Página de NPCs abre corretamente com cabeçalho/texto relacionado. |
+| **CT-004** | Navegar para Inimigos | Página inicial carregada | Clicar no menu **Inimigos**. | Página de Inimigos abre corretamente. |
+| **CT-005** | Navegar para Outros | Página inicial carregada | Clicar no menu **Outros**. | Página “Outros” abre corretamente. |
+| **CT-006** | Voltar para Início | Em qualquer subpágina | Clicar no menu **Início**. | Retorna para a página inicial. |
+| **CT-007** | Verificar imagem principal | Página inicial carregada | Localizar a imagem de destaque. | Imagem está visível e atributo `src` não é vazio. |
+| **CT-008** | Testar links internos da página inicial | Página inicial carregada | Capturar todos os `<a>` da seção principal e checar se `href` não é vazio. | Nenhum link interno está vazio ou quebrado. |
+| **CT-009** | Verificar título principal | Página inicial carregada | Localizar elemento de título (ex.: `<h1>`). | Texto contém “Silksong Wiki” ou similar. |
+| **CT-010** | Checar rodapé (footer) | Página inicial carregada | Rolar até o final e localizar `<footer>`. | Footer presente e contém texto esperado. |
+
+
 
 ## Como Contribuir
 1. Faça um fork deste repositório.
