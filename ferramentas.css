@@ -554,3 +554,13 @@ h1 {
   color: #ff7777;
   transform: rotate(90deg);
 }
+.hamburguer {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ff4f4f;
+    cursor: pointer;
+    margin-left: 10px;
+    z-index: 1000;
+}
