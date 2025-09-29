@@ -72,6 +72,15 @@ Para atrair fãs de jogos parecidos com recomendações.
 - Unsplash / Giphy API
 - Twitter/X API
 
+---
+
+ ##  Demonstração
+🔗 **Acesse aqui:** [silksongwiki.netlify.app](https://silksongwiki.netlify.app/)  
+
+Explore o menu, conheça NPCs, inimigos, assista a vídeos curtos e mergulhe no universo de *Silksong*.
+
+---
+
 
 ### Casos de Teste
 
