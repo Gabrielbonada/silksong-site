@@ -417,7 +417,7 @@ canvas {
 }
 
 .card {
-    width: 12.5rem;
+
     /* 200px */
     height: 15.625rem;
     /* 250px */
@@ -791,3 +791,20 @@ canvas {
 #gnews-container .card:hover {
   transform: scale(1.03);
 }
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: #222;
+  color: white;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
