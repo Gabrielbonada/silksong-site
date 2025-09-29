@@ -73,6 +73,10 @@ Para atrair fãs de jogos parecidos com recomendações.
 - Twitter/X API
 
 ---
+**wireframe do Site** [https://www.canva.com/design/DAG0GGv38iI/SFBu-j3APEiFfE_kcT_hvg/edit?utm_content=DAG0GGv38iI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]
+**mindset** [https://www.canva.com/design/DAG0YrUH00s/f00a4YZTM39HHtDSnbb8Yw/edit?utm_content=DAG0YrUH00s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]
+
+---
 
  ##  Demonstração
 🔗 **Acesse aqui:** [silksongwiki.netlify.app](https://silksongwiki.netlify.app/)  
