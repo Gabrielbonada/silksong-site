@@ -2,7 +2,7 @@
 
 Este é um site dedicado ao jogo **Hollow Knight: Silksong**, apresentando informações sobre NPCs, inimigos, habilidades e muito mais.
 
-##justificativa do Projeto: Hollow Knight – Silksong Site
+ ##justificativa do Projeto
 
 O projeto deste site tem como principal objetivo informar, engajar e entreter os fãs de Hollow Knight: Silksong, reunindo em um único ambiente digital conteúdos relevantes como NPCs, inimigos, habilidades, ferramentas, mapas e as últimas atualizações relacionadas ao jogo.
 
