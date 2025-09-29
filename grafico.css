@@ -419,7 +419,7 @@ canvas {
 .card {
 
     /* 200px */
-    height: 15.625rem;
+    height: auto;
     /* 250px */
     background: linear-gradient(145deg, #161616, #1f1f1f);
     border: 2px solid #333;
