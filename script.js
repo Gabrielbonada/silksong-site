@@ -159,12 +159,14 @@ if (searchInput) {
     }, 1000);
   });
 }
-  const btn = document.getElementById('hamburguer-btn');
-    const navbar = document.querySelector('.navbar');
+const hamburguerBtn = document.getElementById("hamburguer-btn");
+const navbar = document.querySelector(".navbar");
 
-    btn.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
+hamburguerBtn.addEventListener("click", () => {
+    hamburguerBtn.classList.toggle("active");
+    navbar.classList.toggle("active");
+});
+
 
 // =========================
 // LIMPAR PESQUISA AO VOLTAR
