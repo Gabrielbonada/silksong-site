@@ -25,19 +25,21 @@
         </div>
 
 
-       <button id="hamburguer-btn" class="hamburguer">
-            ☰
+       <button id="hamburguer-btn" class="hamburguer" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
         <div class="uniao-menu-pesquisa">
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="Index.html">Início</a></li>
-                   <li id="linka" class="dropdown">
-                        <a href="Index.html#npcs">NPCs</a>
+                    <li id="linka" class="dropdown">
+                        <a href="#npcs">NPCs</a>
                     </li>
                     <li id="linke" class="dropdown">
-                        <a href="Index.html#inimigos">Inimigos</a>
+                        <a href="#inimigos">Inimigos</a>
                     </li>
                     <li class="dropdown">
                         <a href="#">Outros ▾</a>
@@ -45,7 +47,7 @@
                             <li><a href="Silks.html">Skils</a></li>
                             <li><a href="Brasoes.html">Brasões</a></li>
                             <li><a href="Itens.html">Itens</a></li>
-                           <li><a href="ferramentas.html">Ferramentas</a></li>
+                            <li><a href="ferramentas.html">Ferramentas</a></li>
                             <li><a href="mapas.html">Mapas</a></li>
                             <li><a href="graficos.html">Graficos</a></li>
                         </ul>
@@ -55,6 +57,7 @@
             </nav>
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <div class="loader"></div>
             </div>
         </div>
 

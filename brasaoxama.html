@@ -22,16 +22,21 @@
             <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp"
                     alt="Logo do site Hollow Knight" /></a>
         </div>
+<button id="hamburguer-btn" class="hamburguer" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <div class="uniao-menu-pesquisa">
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="Index.html">Início</a></li>
                     <li id="linka" class="dropdown">
-                        <a href="Index.html#npcs">NPCs</a>
+                        <a href="#npcs">NPCs</a>
                     </li>
                     <li id="linke" class="dropdown">
-                        <a href="Index.html#inimigos">Inimigos</a>
+                        <a href="#inimigos">Inimigos</a>
                     </li>
                     <li class="dropdown">
                         <a href="#">Outros ▾</a>
@@ -49,6 +54,7 @@
             </nav>
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <div class="loader"></div>
             </div>
         </div>
 

@@ -124,38 +124,47 @@ header img.neon-img.logo:hover {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-}/* ============================= */
+}
+
+/* ============================= */
 /*          PESQUISA             */
 /* ============================= */
 
 .search-box {
-            margin: 20px;
-            text-align: center;
-        }
-        input {
-            padding: 10px;
-            width: 300px;
-            border-radius: 8px;
-            border: none;
-        }
-        .results {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .results a {
-            display: block;
-            margin: 8px 0;
-            padding: 10px;
-            background: #222;
-            border-radius: 8px;
-            color: #fff;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .results a:hover {
-            background: #444;
-        }
-.uniao-menu-pesquisa{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.results a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    background: #222;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.results a:hover {
+    background: #444;
+}
+
+.uniao-menu-pesquisa {
     display: flex;
 }
 
@@ -187,10 +196,12 @@ h1 {
 
 .juncao-botao button#btnLogin {
     background: transparent;
-    border: 2px solid #00cc66; /* Verde */
+    border: 2px solid #00cc66;
+    /* Verde */
     padding: 8px 18px;
     border-radius: 25px;
-    color: #00cc66; /* Texto verde */
+    color: #00cc66;
+    /* Texto verde */
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
@@ -201,9 +212,12 @@ h1 {
 }
 
 .juncao-botao button#btnLogin:hover {
-    background: #00cc66; /* Fundo verde */
-    color: #fff; /* Texto branco */
-    box-shadow: 0 0 8px #00cc66; /* Glow verde */
+    background: #00cc66;
+    /* Fundo verde */
+    color: #fff;
+    /* Texto branco */
+    box-shadow: 0 0 8px #00cc66;
+    /* Glow verde */
 }
 
 .juncao-botao button#btnLogin a {
@@ -330,15 +344,15 @@ h1 {
     position: relative;
     background: #111 url('/assets/fundo-card.jpg') center/cover no-repeat;
     border: 2px solid rgba(0, 255, 128, 0.5);
-    filter: drop-shadow(0 0 8px rgba(0, 255, 128, 0.6)) 
-            drop-shadow(0 0 20px rgba(0, 128, 64, 0.4));
+    filter: drop-shadow(0 0 8px rgba(0, 255, 128, 0.6)) drop-shadow(0 0 20px rgba(0, 128, 64, 0.4));
     border-radius: 12px;
     padding: 20px;
     width: 250px;
     text-align: center;
-    font-family: "Cinzel", serif; /* Fonte mais elegante */
+    font-family: "Cinzel", serif;
+    /* Fonte mais elegante */
     box-shadow: inset 0 0 10px rgba(0, 255, 128, 0.15),
-                0 4px 12px rgba(0, 0, 0, 0.7);
+        0 4px 12px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -376,10 +390,12 @@ h1 {
     font-size: 1rem;
     color: #66ff99;
 }
+
 .card-npc::before {
     top: 8px;
     left: 12px;
 }
+
 .card-npc::after {
     bottom: 8px;
     right: 12px;
@@ -389,31 +405,24 @@ h1 {
 /*      IFRAME                   */
 /* ============================= */
 .iframe-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px; /* limite para não ficar gigante */
-  margin: 40px auto;
-  aspect-ratio: 16/9; /* mantém proporção */
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 128, 0.4);
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    /* limite para não ficar gigante */
+    margin: 40px auto;
+    aspect-ratio: 16/9;
+    /* mantém proporção */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 128, 0.4);
 }
 
 .iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-.hamburguer {
-    display: none;
-    font-size: 2rem;
-    background: none;
+    width: 100%;
+    height: 100%;
     border: none;
-    color: #66ff99;
-    cursor: pointer;
-    margin-left: 10px;
-    z-index: 1000;
 }
+
 @media(max-width: 1200px) {
 
     .banner1,
@@ -558,8 +567,9 @@ h1 {
         font-size: 1.2rem;
         font-weight: 100;
     }
+
     .banner1,
-    .banner2{
+    .banner2 {
         padding: 10px 30px;
     }
 
@@ -572,11 +582,114 @@ h1 {
         font-size: 1.5em;
         margin-bottom: 50px;
     }
+
     @media(max-width:500px) {
-    input {
-        width: 115px;
+        input {
+            width: 115px;
+        }
+
     }
 
 }
 
+/* Botão hamburguer */
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+    position: relative;
+}
+
+.hamburguer span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #66ff99;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação X */
+.hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navbar padrão (desktop) */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu fullscreen no mobile */
+@media(max-width: 950px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(17, 17, 17, 0.95);
+        gap: 30px;
+        font-size: 24px;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #linka {
+        display: none;
+    }
+
+    #linke {
+        display: none;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #66ff99;
+    }
+
+    .navbar.active {
+        transform: translateY(0);
+    }
+
+    .hamburguer {
+        display: flex;
+        z-index: 1002;
+        /* acima do menu */
+    }
 }

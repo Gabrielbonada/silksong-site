@@ -553,3 +553,177 @@ h1 {
 }
 
 }
+/* Botão hamburguer */
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+    position: relative;
+}
+
+.hamburguer span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #ff4f4f;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação X */
+.hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navbar padrão (desktop) */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu fullscreen no mobile */
+@media(max-width: 950px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(17, 17, 17, 0.95);
+        gap: 30px;
+        font-size: 24px;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #linka {
+        display: none;
+    }
+
+    #linke {
+        display: none;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #ff4f4f;
+    }
+
+    .navbar.active {
+        transform: translateY(0);
+    }
+
+    .hamburguer {
+        display: flex;
+        z-index: 1002;
+        /* acima do menu */
+    }
+}
+
+
+@media (max-width: 600px) {
+  .dropdown-cards {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .card-menu {
+    width: 28vw;
+    padding: 8px;
+  }
+
+  .card-menu img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card-menu span {
+    font-size: 0.75rem;
+  }
+}
+/* Container do dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Botão "Outros" */
+.dropdown>a {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dropdown>a:hover {
+    color: #ff4f4f;
+}
+
+/* Conteúdo do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Cada link dentro do dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 12px 18px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+.dropdown-content a:hover {
+    background: #ff4f4f;
+    color: #111;
+}
