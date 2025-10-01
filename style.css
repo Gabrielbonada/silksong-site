@@ -804,6 +804,7 @@ canvas {
     cursor: pointer;
     z-index: 1001;
     padding: 0;
+    position: relative;
 }
 
 .hamburguer span {
@@ -826,37 +827,51 @@ canvas {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Menu mobile animado */
+/* Navbar padrão (desktop) */
 .navbar {
     display: flex;
     gap: 20px;
 }
 
+/* Menu fullscreen no mobile */
 @media(max-width: 950px) {
     .navbar {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 70px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
-        background: #111;
-        padding: 20px;
-        border-top: 1px solid #ff4f4f;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.3s ease-in-out;
+        height: 100vh;
+        background: rgba(17, 17, 17, 0.95);
+        gap: 30px;
+        font-size: 24px;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #ff4f4f;
     }
 
     .navbar.active {
-        display: flex;
-        opacity: 1;
         transform: translateY(0);
     }
 
     .hamburguer {
         display: flex;
+        z-index: 1002; /* acima do menu */
     }
 }
 
