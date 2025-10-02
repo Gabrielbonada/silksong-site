@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Explore o mundo de Hollow Knight: Silksong com Hornet como protagonista. Descubra NPCs, inimigos e habilidades neste site dedicado ao jogo." />
+    <meta name="keywords" content="Hollow Knight, Silksong, Hornet, Jogo, Aventura, Team Cherry" />
+    <meta name="author" content="Gabriel Bonada" />
+    <title>fandom: Skilsong</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ferramentas.css" />
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="Index.html"><img class="neon-img logo" src="/assets/site/Site-logo.webp"
+                    alt="Logo do site Hollow Knight" /></a>
+        </div>
+
+       <button id="hamburguer-btn" class="hamburguer" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="uniao-menu-pesquisa">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="Index.html">Início</a></li>
+                    <li id="linka" class="dropdown">
+                        <a href="#npcs">NPCs</a>
+                    </li>
+                    <li id="linke" class="dropdown">
+                        <a href="#inimigos">Inimigos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Outros ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Silks.html">Skils</a></li>
+                            <li><a href="Brasoes.html">Brasões</a></li>
+                            <li><a href="Itens.html">Itens</a></li>
+                            <li><a href="ferramentas.html">Ferramentas</a></li>
+                            <li><a href="mapas.html">Mapas</a></li>
+                            <li><a href="graficos.html">Graficos</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <div class="loader"></div>
+            </div>
+        </div>
+
+
+        <div class="juncao-botao">
+            <button id="btnLogin"><a href="#">Login</a></button>
+            <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki" class="buton-hornet" target="_blank"
+                rel="noopener noreferrer" aria-label="Acesse a Wiki de Hollow Knight">
+                <img class="neon-img icon" src="/assets/site/icon.png" alt="Ícone Hornet" />
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Hollow Knight: Silksong </h1>
+        <section class="sec1">
+            <div class="texteeimg">
+                <img src="/assets/site/aaaa.png" alt="">
+
+                <p class="texto-main">
+                    Em <strong>Hollow Knight: Silksong</strong> o conhecido sistema de Amuletos do
+                    primeiro jogo foi substituído por uma nova estrutura baseada em Brasões e Ferramentas . Este sistema
+                    expande as habilidades ativas e passivas de Hornet, oferecendo mais maneiras de personalizar seu
+                    estilo
+                    de jogo por meio de escolhas criteriosas de equipamentos. Brasões podem ser trocados em Bancos,
+                    assim
+                    como os Amuletos no jogo original, e cada Brasão também altera o HUD de Hornet para refletir qual
+                    está
+                    equipado.
+
+                    Essas habilidades são essenciais para a progressão no jogo, pois frequentemente serão necessárias
+                    para
+                    superar desafios, desvendar segredos escondidos e derrotar chefes formidáveis. Além disso, elas
+                    enriquecem a
+                    experiência do jogador, oferecendo estilos variados de luta e estratégias únicas, tornando cada
+                    aventura
+                    em
+                    Silksong uma jornada dinâmica e envolvente.
+                </p>
+
+            </div>
+
+            <div class="lista-de-ferramentas">
+                <ul>
+                    <li>
+                        <img src="/assets/site/icon_red_tools_hollow_knight_silksong_wiki_guide_32px.png"
+                            alt="Ícone vermelho">
+                        <p><strong>Ferramentas Vermelhas</strong> – dispositivos ativos como projéteis, armadilhas e
+                            bombas (usos limitados, reabastecidos com Fragmentos de Concha).</p>
+                    </li>
+                    <li>
+                        <img src="/assets/site/icon_blue_tools_hollow_knight_silksong_wiki_guide_32px.png"
+                            alt="Ícone azul">
+                        <p><strong>Ferramentas Azuis</strong> – melhorias de combate passivo, tanto defensivas quanto
+                            ofensivas (proteção extra, resistência a perigos, aplicação de efeitos).</p>
+                    </li>
+                    <li>
+                        <img src="/assets/site/icon_yellow_tools_hollow_knight_silksong_wiki_guide_32px (1).png"
+                            alt="Ícone amarelo">
+                        <p><strong>Ferramentas Amarelas</strong> – combate ofensivo passivo ou melhorias de suporte
+                            (ataques de reforço, vantagens de exploração).</p>
+                    </li>
+                    <li>
+                        <img src="/assets/site/icon_white_tools_hollow_knight_silksong_wiki_guide_32px.png"
+                            alt="Ícone branco">
+                        <p style="text-decoration: none;"><strong>Ferramentas Brancas</strong> – <span> <a
+                                    style=" color: white;" href="Silks.html">Habilidades de
+                                    Seda</a></span> que gastam o recurso Seda de Vespa (cura, ataques especiais).</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- GRID DE ITENS -->
+        <div class="grid">
+            <div class="item" data-nome="Alfinete reto" data-tipo="Ferramenta Vermelha"
+                data-efeito="Ferramenta de arremesso leve, projetada para ataques rápidos." data-onde="
+                <ul>
+                <li>A Medula [Mapa da Canção da Seda]</li>
+                <li>Coletada dentro de uma cela de prisão localizada a leste de The Marrow.</li>
+                <li>As celas ficam logo abaixo da sala do mini-chefe Skarrgard.</li>
+                <li>No encontro inicial, você verá Grindle preso na cela superior direita.</li>
+                <li>Bata na porta várias vezes para quebrá-la, libertando Grindle.</li>
+                </ul>
+                    " data-img="/assets/vermelho/ajustadordecaixa.png">
+                <img src="/assets/vermelho/ajustadordecaixa.png" alt="">
+                <p>ALFINETE RETO</p>
+            </div>
+             <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeBtn">&times;</span>
+                    <img id="modal-img" src="" alt="">
+                    <h2 id="modal-nome"></h2>
+
+                    <p><strong>Tipo:</strong> <span id="modal-tipo"></span></p>
+                    <p><strong>Efeito:</strong> <span id="modal-efeito"></span></p>
+                    <div>
+                        <strong>Onde encontrar:</strong>
+                        <div id="modal-onde"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item" data-nome="Fragmento de Carretel"
+                data-descricao="Fragmento usado para aumentar a resistência."
+                data-img="https://hollowknight.wiki.gg/images/8/8c/Spool_Fragment_Silksong.png">
+                <img src="https://hollowknight.wiki.gg/images/8/8c/Spool_Fragment_Silksong.png" alt="">
+                <p>FRAGMENTO DE CARRETEL</p>
+            </div>
+
+            <div class="item" data-nome="Oléo Pálido" data-descricao="Material lendário usado em forjas."
+                data-img="https://hollowknight.wiki.gg/images/7/71/Pale_Oil_Silksong.png">
+                <img src="https://hollowknight.wiki.gg/images/7/71/Pale_Oil_Silksong.png" alt="">
+                <p>OLÉO PÁLIDO</p>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="closeBtn">&times;</span>
+                <img id="modal-img" src="" alt="">
+                <h2 id="modal-nome"></h2>
+                <p id="modal-descricao"></p>
+            </div>
+        </div>
+
+
+        <img width="800" style="margin: auto; display: flex;" src="/assets/site/linha.png" alt="Hornet em destaque">
+
+        <section class="banner2">
+
+
+
+    </main>
+    <footer class="hollow-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Reino de Hollow. Todos os direitos reservados.</p>
+            <div class="footer-icons">
+                <a href="https://github.com/Gabrielbonada" title="GitHub"><img
+                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                <a href="#" title="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+                        alt="Twitter"></a>
+                <a href="#" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                        alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="ferramentas.js"></script>
+    <script src="hamburguer.js"></script>
+    <script src="pesquisa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>
